@@ -1,0 +1,2627 @@
+.light-animation{
+    height:700px;
+}
+
+.light-animation img {
+    transform: scale(.3);
+    left: -35px;
+    top: 55px;
+    transition: 0.5s;
+    transform-origin: top;
+    position: absolute;
+} 
+.light-active  .light-animation img{
+    transform: scale(1);
+    top:-50px;
+}
+
+h2{
+   font-family:"Playfair Display" !important;
+}
+p{
+  font-family:"DM Sans" !important;
+}
+.header-nav-wrapper{
+    margin-bottom:-30px !important;
+}
+.header-nav-wrapper a{
+    font-family:"karla" !important;
+    font-size:20px !important;
+}
+.header-actions-action a{
+    font-family:"karla" !important;
+    font-size:18px !important;
+    font-weight: 400 !important;
+}
+h4{
+    margin:0px !important;
+}
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 0;
+}
+b, strong {
+    font-weight: 600!important;
+}
+
+/*===================================*/
+.fe-block-yui_3_17_2_1_1752563299679_9949 .sqsrte-text-color--white{
+  background: linear-gradient(360deg, #2A2118 33.09%, rgba(42, 33, 24, 0) 86.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size:115px;
+} 
+
+
+/*====header-nav-wrapper====*/
+.header-nav-wrapper a{
+  color:#000 !important;
+}
+.header-actions-action .btn{
+background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/687722d6bfac50177cac8fed/1752638166935/header-action-btn.png);
+    width: 205px;
+    height: 132px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding: 0px 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: normal;
+    background-position: 0px 8px;
+  	color:#000;
+}
+
+#yui_3_17_2_1_1752828396702_193{
+  background-color: #494237 !important;
+}
+#yui_3_17_2_1_1752828396702_193 .section-border{
+  background-color:  #494237 !important;
+}
+#yui_3_17_2_1_1752828346057_189{
+	background: #494237 !important;
+}
+#footer-sections .sqs-html-content p, #footer-sections .sqs-html-content p a{
+  font-size: 14px;
+  font-weight: 200 !important;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Karla", sans-serif !important;
+  letter-spacing:.5px;
+}
+#block-485167d87e0d4f60ab3b p{
+  text-align: right !important;
+}
+#footer-sections #yui_3_17_2_1_1752829127988_192{
+  padding-bottom: 10px !important;
+}
+.header-nav-item--folder .header-nav-folder-content {
+    text-align: left !important;
+    background-color: #E8E5DA !important;
+    box-shadow: 4px 4px 18px 0px #00000026;
+    padding: 20px !important;
+    z-index: 0 !important;
+}
+.header-nav-folder-content .header-nav-folder-item:not(:last-child){
+    margin-bottom:10px !important;
+}
+.header-title-logo{
+    margin-top:-20px;
+}
+.header-nav-item .header-nav-folder-title-text, .header-nav-item .header-nav-folder-item-content{
+    background:transparent !important;
+}
+.header-nav-wrapper a{
+    position:relative;
+}
+.header-nav-wrapper a:before{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:1px;
+    background-color:#000;
+    bottom: 0;
+    left: 0;
+    transition:.3s ease-in-out;
+}
+.header-nav-wrapper a:hover:before{
+    width:100%;
+}
+.header .header-layout-nav-right .header-nav .header-nav-item--folder .header-nav-folder-content{
+    left: auto;
+    right: unset !important;
+}
+/*===================================
+*roles Describe
+====================================*/
+.describe-outer-section h4{
+    text-align: center;
+    color: #fff;
+    margin: 0px auto !important;
+    max-width:1024px;
+}
+.d-supheading{
+  margin-bottom: 60px;
+  text-align:center;
+}
+.d-supheading p{
+  color: #fff;
+  color:#FEC671;
+}
+
+.roles-describe-section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.roles-describe-section .card {
+  background: linear-gradient(180deg, rgba(252, 251, 244, 0.45) -13.41%, rgba(150, 149, 146, 0.45) 123.48%);
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  border: 0.85px solid #E8E5DA !important;
+}
+
+.roles-describe-section .card:hover{
+  transform: translateY(-10px);
+    background: linear-gradient(180deg, rgba(254, 198, 113, 0.6) -13.41%, rgba(176, 133, 68, 0.6) 123.48%);
+}
+
+.roles-describe-section .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.roles-describe-section .content h3 {
+  font-family: "Manrope"!important;
+  font-size:24px !important;
+  margin-top:0px !important;
+  margin-bottom: 4px !important;
+  color:#E8E5DA !important;
+  font-weight: 700!important;
+  margin: 0px;
+}
+
+.roles-describe-section .content p {
+  font-family: "Manrope"!important;
+  font-size: 18px!important;
+  font-weight: 600!important;
+  color: #E8E5DA!important;
+  margin:0px;
+}
+
+.squarespace-editable #entrepreneur, .squarespace-editable #managers, .squarespace-editable #adult, .squarespace-editable #thinker{
+    display:block !important;
+}
+
+#managers, .inactive#entrepreneur, .inactive#managers, #adult, #thinker, .inactive#adult, .inactive#thinker{
+    display:none;
+}
+
+.active#managers, .active#adult, .active#thinker, .active#entrepreneur{
+    display:block;
+}
+ #whom-serve-best{
+     overflow:hidden;
+ }
+ #whom-serve-best:before{
+    content:"";
+    background: #FEC671;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    position:absolute;
+    width:700px; 
+    height:700px;
+    border-radius:50%;
+    top:60px;
+    right:-20px;
+    z-index:1;
+    opacity:0.4;
+}
+#whom-serve-best:after{
+    content:"";
+    background:#F6CBE1;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    position:absolute;
+    width:600px; 
+    height:600px;
+    border-radius:50%;
+    top:60vh;
+    right:unset !important;
+    left:-100px;
+    z-index:0;
+    opacity:0.4;
+}
+
+/*========================================*/
+   .work-with-section{
+       position:relative;
+       z-index:999;
+   }
+    .work-with-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #2f2c27;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .work-with-section .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .work-with-section  .card {
+      background-color: #FCFBF4;
+      border-radius: 12px;
+      box-shadow: 4px 12px 40px 25px #0000000D;
+      padding: 40px;
+      border: 0.85px solid #2A2118;
+      transition: transform 0.4s ease;
+      cursor:pointer;
+    }
+    .work-with-section .card:not(:first-child){
+      margin-top: -30px;
+    }
+    .work-with-section .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .info-card-box{
+      display: flex;
+      gap: 15px; 
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    .work-with-section .work-card-details{
+      display:none;
+      margin-bottom: 70px; 
+    }
+    .work-with-section .card.active .work-card-details{
+      display: block;
+      font-family: "Karla" !important;
+      font-size:22px;
+      color:#000000;
+    }
+    .work-with-section .card.active .work-card-details *{
+        transition:unset !important;
+    }
+    .work-with-section .card.active{
+        z-index:999;
+        position:relative;
+    }
+    .work-with-section .card.active .work-card-details a{
+        font-family: "Karla" !important;
+    }
+    .work-with-section  .icon {
+      flex-shrink: 0;
+      width: 130px;
+      height:130px;
+      border-radius: 50%;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .work-with-section .card-text h2 {
+      margin: 0;
+      font-size: 40px;
+      font-weight: bold;
+      color: #2A2118;
+      font-family:"Playfair Display" !important;
+    }
+
+    .work-with-section .card-text p {
+      margin: 5px 0 0;
+      color: #2A2118;
+      font-family:"Playfair Display" !important;
+    font-weight: 700;
+    font-size: 25.58px;
+
+    }
+
+    .work-with-section .card.expanded p.description {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .work-with-section  .card.expanded a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #222;
+      font-weight: bold;
+      text-decoration: none;
+    }
+/*================================================*/
+#meet-unorthodox-coach{
+    margin-top:-30px !important;
+}
+#about-me-section:before {
+    content: "";
+    background-image: url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/6880849142f9792023303dd6/1753253009864/about-us-bg.png');
+    width: 100%;
+    position: absolute;
+    height:320px;
+    bottom: 20px;
+    left: 0;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top right;
+}
+
+#meet-unorthodox-coach .section-background{
+    background-color:#BFCCA9 !important;
+}
+#meet-unorthodox-coach .list-section-title p{
+    font-family:"Playfair Display" !important;
+    color:#000000;
+}
+#meet-unorthodox-coach .list-item{
+   background: #E8E5DA !important;
+   border: 0.5px solid #494237;
+   box-shadow: -10px 20px 20px 0px #0000001A;
+   border-radius:30px;
+}
+#meet-unorthodox-coach .list-item-content__title{
+    font-size: 28px !important;
+    text-align: center;
+    font-family:"Manrope" !important;
+    font-weight:500;
+    max-width: 340px !important;
+    color:#000 !important;
+}
+#meet-unorthodox-coach .list-item-content__description p{
+    font-size:22px;
+}
+
+#the-leadership-wiring-title .section-background, #the-leadership-wiring .section-background, #leaderships-wiring-latest .section-background{
+    background-color:#BFCCA9 !important;
+}
+ #the-leadership-wiring .user-items-list-item-container.user-items-list-simple{
+    grid-template-columns: repeat(1, 1fr) !important;
+ }
+
+#the-leadership-wiring .list-item-media{
+    width:30% !important;
+    margin-bottom: 0px !important;
+}
+
+#the-leadership-wiring .list-item-content{
+    width:70% !important;
+}
+#the-leadership-wiring .list-item {
+   flex-direction: row-reverse !important;
+   align-items: center;
+   background: #E8E5DA !important;
+   border: 0.5px solid #494237;
+   box-shadow: -10px 20px 20px 0px #0000001A;
+   border-radius:30px;
+   gap: 40px;
+}
+
+#the-leadership-wiring  .user-items-list{
+    padding-top: 2vmax !important;
+}
+
+#the-leadership-wiring .list-item-content__title{
+    font-size: 28px !important;
+    color:#000 !important;
+}
+
+#the-leadership-wiring .list-item-content__description{
+    margin-top: 2% !important;
+}
+#the-leadership-wiring .list-item-content__description p{
+    color:#000 !important;
+}
+          
+.leadership-card-wraper {
+      display: flex;
+      gap: 30px;
+      max-width: 1200px;
+      flex-wrap: wrap;
+    }
+    .leadership-card {
+        flex: 1;
+        max-width: 595px;
+        height: 750px;
+        color: white;
+        position: relative;
+        text-align: center;
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .leadership-card.muscles{
+      background-image: url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/68830dc3403fb946d4f87cb0/1753419203892/muscles-bg.png');
+        padding: 30px 60px 30px 100px;
+    }
+     .leadership-card.muscles img{
+         margin-left:60px;
+     }
+    .leadership-card.compass{
+      background-image: url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/68830dc36794ad0e61925f80/1753419203787/compass-bg.png');
+        padding: 30px 100px 30px 60px;
+    }
+      .leadership-card.compass img{
+          margin-right:30px;
+      }
+    .leadership-card h3 {
+      color:#FFFFFF;
+      font-size: 28px;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    .leadership-card.compass h3{
+        margin-top:10px;
+    }
+    .leadership-card p {
+      color:#FFFFFF;
+      font-size: 22px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+/*=========================================================*/
+    #how-can-help-secton:after{
+        content:'';
+        width:100%;
+        height:100%; 
+        position:absolute;
+        left:0px; 
+        bottom: 135px;
+        background: linear-gradient(180deg, rgba(205, 226, 255, 0) 54.38%, #CDE2FF 100%);
+    }
+    #how-can-help-secton:before{
+        content:"";
+        background-image:url(https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/687a0540184ae75ed7b7b02d/1752827201006/the-shift-happens.png);
+        position:absolute;
+        bottom:-20px; 
+        left:0px;
+        width:100%;
+        height:562px;
+        z-index:1;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+    .how-can-help {
+      display: flex;
+      gap: 0px;
+      align-items: center;
+      max-width: 1300px;
+      width: 100%;
+    }
+
+    .left-title {
+      color: #2A2118;
+      white-space: nowrap;
+      position: relative;
+    }
+    .left-title h2{
+        color:#2A2118;
+    }
+    .line-shape{
+      width: 40%;
+      text-align: right;
+    }
+    .line-shape svg{
+      height: 550px;
+    }
+    .lines {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 60%;
+    }
+    .line-connector {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+  .bubble {
+      background: #FEC671;
+      border-radius: 60px;
+      padding: 10px 30px;
+      box-shadow: 4px 8px 25px 0px #00000026;
+      max-width: 350px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 9;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position:relative;
+  }
+
+    .bubble-title {
+      font-weight: 600;
+      font-size: 28px;
+      color: #2A2118;
+      margin-bottom: 6px;
+    }
+    
+    .bubble-title a{
+        position:absolute;
+        width:100%;
+        height:100%;
+        left:0px;
+        top:0px;
+    }
+
+    .bubble-desc {
+      background: linear-gradient(90deg, #FEC671 -21.4%, rgba(254, 198, 113, 0) 100%);
+      height: 165px;
+      padding-left: 100px;
+      display: flex;
+      align-items: center;
+      margin-left: -80px;
+      clip-path: polygon(0 12%, 0% 0, 0% 100%, 0 90%);
+      width: calc(100% - 350px);
+          transition: 0.4s all;
+    }
+    .bubble-desc p{
+      font-size: 22px;
+      color: #333;
+      line-height: 1.2;
+    }
+    .line-connector:hover .bubble-desc{
+      clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 90%);
+      
+    }
+   
+    .line-shape .left-title{
+        position: absolute;
+        top: 200px;
+        left: -30px;
+        text-align:center;
+        color:#2A2118;
+    }
+    .line-shape .left-title p{
+        font-size:18px;
+    }
+    
+    
+/*==============================================
+* testimonial
+*===============================================*/
+#real-transformation-section .section-background{
+    background: linear-gradient(179.98deg, rgba(254, 198, 113, 0) 0.01%, rgba(254, 198, 113, 0.7) 151.78%) !important;
+}
+
+#real-transformation-section h3{
+   font-family:"Playfair Display" !important;
+}
+  .testimonial-slider {
+      margin: 60px auto;
+      padding: 0 0px;
+    }
+
+    /* Main Swiper */
+    .testimonial-slider .mySwiper .swiper-slide {
+      opacity: 1;
+      transform: scale(0.8);
+      transition: all 0.3s ease;
+    }
+
+   .testimonial-slider  .mySwiper .swiper-slide-active {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .testimonial-slider .testimonial-card {
+        background: #1f2d5d;
+        color: #fff;
+        padding: 40px 60px 40px 60px;
+        border-radius: 20px;
+        height: 100%;
+        text-align: center;
+        margin: 50px auto;
+        box-shadow: 0px -8px 30px 0px #00000026;
+        margin-top:110px;
+    }
+    
+    .testimonial-slider.about-us .testimonial-card{
+            padding: 40px 60px 0px 60px !important;
+    }
+    
+    .fractional-leadership .testimonial-card {
+        padding: 40px 60px 0px 60px !important;
+    }
+        
+    .testimonial-slider.testimonial-slider .swiper-wrapper{
+         align-items:center;
+     }
+    .testimonial-slider .testimonal-content-details{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .testimonial-slider .testimonal-button{
+        background: #E8E5DA;
+        border-radius: 30px 30px 0px 0px;
+        padding: 15px;
+        margin-top: 40px;
+    }
+     .testimonial-slider .testimonal-button p{
+        margin:0px !important;
+        font-family: DM Sans;
+        font-weight: 400;
+        font-style: Italic;
+        font-size: 20px;
+        text-align: center;
+        color: #2A2118;
+     }
+    .testimonial-slider.about-us .testimonal-button p, .testimonial-slider.testimonial-slider .testimonal-button p{
+        font-size:18px;
+    }
+    .testimonial-slider  .avatar-top img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: -110px auto 20px;
+      border: 4px solid white;
+      background: white;
+    }
+
+    .testimonial-slider .testimonial-text {
+      font-family: DM Sans;
+      font-weight: 600;
+      font-style: Italic;
+      font-size: 30px;
+      text-align: center;
+      color:#FFF;
+    }
+
+    .testimonial-slider .testimonial-author {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 22px;
+        text-align: center;
+
+    }
+    .testimonial-slider.about-us .testimonial-author, .testimonial-slider.testimonial-slider .testimonial-author{
+        font-size:18px;
+    }
+    .read-full-story{
+        font-family: DM Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 22px;
+    }
+
+    .testimonial-slider .swiper-button-next,
+    .testimonial-slider .swiper-button-prev {
+      color: #1f2d5d;
+    }
+
+    /* Thumbs */
+    .testimonial-slider .thumbs-swiper, .testimonial-slider .thumbs-swiperfl {
+      padding: 20px 80px;
+      max-width:330px;
+    }
+
+    .testimonial-slider .thumb-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .testimonial-slider .swiper-slide.thumb-slide:not(.swiper-slide-active) img{
+        transform: scale(0.75);
+    }
+
+    .testimonial-slider  .thumb-slide img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-slider .swiper-slide-thumb-active img {
+      transform: scale(1.25);
+      border-color: #1f2d5d;
+    }
+    .testimonial-slider  .thumb-slide{
+        opacity:0;
+    }
+    .testimonial-slider  .thumb-slide.swiper-slide-prev, .testimonial-slider  .thumb-slide.swiper-slide-active, .testimonial-slider  .thumb-slide.swiper-slide-next{
+        opacity:1;
+    }
+    @media (max-width: 768px) {
+      .testimonial-slider  .mySwiper {
+        padding-bottom: 20px;
+      }
+      .testimonial-slider  .mySwiper .swiper-slide {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+      }
+      .testimonial-slider .thumb-slide img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+
+
+
+    
+    .footer-card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .card-footer {
+      max-width: 300px;
+      height: 208px;
+      border-radius: 20px;
+      background: #FFFFFF33;
+      color: white;
+      display: flex;
+      flex-direction: column;
+     justify-content: space-between;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      overflow:hidden;
+      padding:20px;
+      position:relative;
+      width:100%;
+    }
+    .linkedin-link{
+        position:absolute;
+        width:100%;
+        height:100%;
+        left:0px;
+        top:0px;
+    }
+    .card-footer svg{}
+
+    .card-footer h4{
+      margin: 0px;
+      font-size: 20px;
+      color:#E8E5DA;
+    }
+    
+    .card-footer:hover{
+      background: linear-gradient(147.34deg, rgba(254, 198, 113, 0.9) 5.26%, rgba(254, 198, 113, 0.27) 80.47%);
+    }
+    .card-footer:hover h4, .card-footer:hover h3, .card-footer:hover a {
+      color:#2A2118 !important;
+    }
+    .card-footer .mail-copy-header{  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-footer .mail-copy-header h3{
+        margin:0px !important;
+        font-size:22px;
+        color:#E8E5DA;
+    }
+    .email-copy a{
+        font-size:16px;
+        color:#E8E5DA;
+        white-space: nowrap;
+    }
+    
+    .email-copy-action{
+        padding:5px 10px;
+        cursor:pointer;
+        display:flex;
+    }
+    .email-copy-action.copied svg path{
+        fill:#FEC671 !important;
+    }
+    .email-copy-action 
+    #footer-sections{
+        overflow:hidden;
+    }
+    #footer-sections .line-field{
+        margin-top:0px !important;
+        margin-bottom:10px !important;
+    }
+     #footer-sections  .sqs-block-form{
+        justify-content: center !important;
+     }
+    /*#footer-sections:before{*/
+    /*     content: "";*/
+    /*background: #FEC671;*/
+    /*-webkit-filter: blur(80px);*/
+    /*filter: blur(80px);*/
+    /*position: absolute;*/
+    /*width: 600px;*/
+    /*height: 600px;*/
+    /*border-radius: 50%;*/
+    /*top: 60vh;*/
+    /*left: -110px;*/
+    /*z-index: 1;*/
+    /*opacity: 0.4;*/
+    /*}*/
+    #footer-sections button span{
+        text-transform: capitalize !important;
+        font-family: 'Manrope'!important;
+    }
+    #footer-sections p{
+        font-family: "Karla", sans-serif!important;
+        font-weight:700 !important;
+    }
+    
+    .e_scroll-line {
+      position: relative;
+      height: 120px;
+      width: 5px;
+      background: linear-gradient(90deg, rgba(146, 146, 146, 0) -28.68%, #ffffff5c 45.59%, rgba(255, 255, 255, 0) 117.05%);
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .e_scroll-bar {
+      position: absolute;
+      top: -50%;
+      height: 90%;
+      width: 100%;
+      background: linear-gradient(90deg, rgba(146, 146, 146, 0) -28.68%, #FFFFFF 45.59%, rgba(255, 255, 255, 0) 117.05%);
+      border-radius: 2px;
+      opacity: 0;
+      transform-style: preserve-3d;
+      will-change: transform, opacity;
+      animation: scrollBarAnim 3s ease-in-out infinite;
+    }
+
+    @keyframes scrollBarAnim {
+      0% {
+        transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1);opacity: 1;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate3d(0px, 200%, 0px) scale3d(1, 1, 1);opacity: 1;
+      }
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+    .roles-shape-animation{
+        clip-path: polygon(0 0, 100% 0, 100% 10%, 0 10%);
+    }
+    .roles-shape-animation-gradient{
+        width: 100%;
+        height: 450px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0c0c0c 80%);
+        position: absolute;
+        top: 10%;
+        margin-bottom:-50px;
+    }
+    .light-card-style{
+        max-width:700px;
+        margin:0px auto;
+    }
+     .light-card-style.executive-functioning{
+         max-width:790px;
+     }
+    .light-card-title{
+        background: #FEC671;
+        box-shadow: 4px 8px 25px 0px #00000026;
+        font-family:"Playfair Display" !important;
+        font-weight: 600;
+        font-size: 40px;
+        color: #2A2118;
+        padding: 40px 0px;
+        border-radius: 100px;
+        text-align: center;
+        width:85%;
+        margin:0px auto;
+        position: relative;
+        z-index: 9;
+    }
+    .light-card-details {
+        background: linear-gradient(180deg, #FEC671 -21.4%, rgba(254, 198, 113, 0) 100%);
+        padding: 40px 120px;
+        clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
+        font-weight: 400;
+        font-size: 19px;
+        text-align: center;
+        color: #2A2118;
+    }
+    .light-card-details p{
+        margin:0px!important;
+    }
+    .fe-block-yui_3_17_2_1_1753851657737_3774 p, .fe-block-fb7460279fcb61742e32 p{
+        padding-right:260px;
+    }
+    .fe-block-14cf49ec8cd9de01d396 p{ 
+        padding-right: 230px;
+    }
+    
+    .fe-block-yui_3_17_2_1_1753851657737_3774 {
+        box-shadow: -10px 20px 20px 0px #0000001A;
+        border-radius: 30px;
+    }
+    .fe-block-yui_3_17_2_1_1754224334864_2794{
+        box-shadow: -10px 20px 20px 0px #0000001A;
+        border: 3px solid #FEC671;
+        border-radius: 30px;
+    }
+
+    .fe-block-yui_3_17_2_1_1754224334864_2794 p{
+        margin:0px !important;
+    }
+    
+    .fe-block-6401772d6c5f8614e5fd hr{
+        height:4px !important;
+        background:#586D36 !important;
+    }
+    #our-conversations-section .section-background{
+        background:#BFCCA9;
+        margin-top:-5px !important;
+    }
+    
+    .our-conversations-wrap {
+        background: #E8E5DA;
+        box-shadow: 0px 20px 20px 0px #0000001A;
+        padding: 40px; 
+        border-radius: 30px;
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .conversations-top-box{
+        display: flex;
+    }
+    .conversation-top-image{
+        width: 40%;
+    }
+   .conversation-image {
+        width: 60%;
+        text-align: right;
+        margin-top: -150px;
+    }
+    
+    .strengths-coach{
+        color:#000;
+    }
+    .conversations-top-box{
+        display: flex;
+    }
+    .conversation-top-image{
+        width: 40%;
+    }
+   .conversation-image {
+        width: 60%;
+        text-align: right;
+        margin-top: -150px;
+        position: absolute;
+        right: 0;
+    }
+    .conversation-s-text{
+        width: 70%;
+        margin-top:-10px;
+    }
+    .conversation-land-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:30px;
+    }
+  .conversation-land-grid.d-flex {
+    display: flex !important;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    .conversation-land-grid.d-flex .conversation-land-box{
+        width:31%;
+    }
+    .conversation-land-box {
+        padding-bottom: 20px;
+    }
+    .c-land-box-element{
+        background: #E8E5DA;
+        box-shadow: -10px 20px 20px 0px #0000001A;
+        padding: 0px 30px 20px 30px;
+        border-radius: 30px;
+        height: 100%;
+        transition:.3s ease-in-out;
+        text-align:center;
+    }
+    .c-land-box-element img{
+        margin-left:-18px !important;
+    }
+    .c-land-box-element:hover{
+        box-shadow: -5px 10px 10px 0px #00000014;
+    }
+    .c-land-box-element p{
+        margin:0px !important; 
+        text-align:left;
+        color:#000000;
+    }
+   .conversation-land-grid.d-flex .c-land-box-element p{
+       text-align:center;
+   }
+    #real-transormation-services .section-background{
+        background: linear-gradient(179.98deg, rgba(254, 198, 113, 0) 0.01%, rgba(254, 198, 113, 0.7) 151.78%);
+    }
+    .fe-block-yui_3_17_2_1_1753873361836_2539  p{
+        font-size:22px !important;
+        font-weight:600 !important;
+        color:#000000 !important;
+    }
+   .header-border:before{
+        content: "";
+        box-shadow: 0px 12px 20px 0px #0000000D;
+        background:#E8E5DA;
+        position: absolute;
+        width: 100%;
+        height: 77%;
+    }
+    #collection-6875fe55bcbd23389d3244ba .header-border:before{
+        opacity:0 !important;
+    }
+    #collection-6875fe55bcbd23389d3244ba.tweak-fixed-header .header{
+        position:absolute !important;
+    }
+    #collection-6875fe55bcbd23389d3244ba.tweak-fixed-header.active .header{
+        position:fixed !important;
+    }
+    
+    #collection-6875fe55bcbd23389d3244ba.tweak-fixed-header.active .header-border:before{
+          opacity:1 !important;
+    }
+   
+    #collection-6875fe55bcbd23389d3244ba .header-title-logo {
+        opacity: 1;
+        position:relative;
+    }
+   #collection-6875fe55bcbd23389d3244ba .header-title-logo a:before{
+        content:"";
+        background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/6895942c2bac05573801a50c/1754633260910/candice-lim-the-unorthodox-coach-white.png);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #collection-6875fe55bcbd23389d3244ba.tweak-fixed-header.active .header-title-logo a:before{
+        opacity:0;
+    }
+    /*#collection-6875fe55bcbd23389d3244ba .header-mobile-logo img{*/
+    /*    position: absolute;*/
+    /*    height:70px;*/
+    /*    top: 20px;*/
+    /*}*/
+    /* #collection-6875fe55bcbd23389d3244ba.tweak-fixed-header.active .header-mobile-logo {*/
+    /*    opacity: 0;*/
+    /*}*/
+    #our-conversations-section h3{
+        font-weight:700 !important;
+        font-size:36px !important;
+        font-family:"Playfair Display" !important;
+        color:#2A2118 !important;
+    }
+    
+    #leadership-coaching-section:before {
+        content: "";
+        background-image: url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/6880849142f9792023303dd6/1753253009864/about-us-bg.png');
+        width: 100%;
+        position: absolute;
+        height: 200px;
+        bottom: 0px;
+        left: 0;
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+    }
+    
+    #collection-6875fe55bcbd23389d324471 #about-me-section .section-background{
+       background:#BFCCA9;
+    }
+    #about-us-book-exploratory p{
+        font-weight:500 !important;
+        font-family: 'DM Sans' !important;
+        font-size:34px !important;
+    }
+    .fe-block-yui_3_17_2_1_1753877000928_2711{
+        margin-top:-10px !important;
+    }
+    
+    
+    /*================================================*/
+    .leaders-helped-section {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .leaders-help-wap{
+        padding: 40px;
+        border-radius: 20px;
+        display: flex;
+        gap:15px;
+        background: #E8E5DA;
+        border: 3px solid #FEC671;
+        box-shadow: 0px 20px 30px 0px #0000001A;
+        background: #E8E5DA;
+    }
+    .leader-help-boximage{
+        width:60px;
+    }
+    .leader-help-content{
+        width: calc(100% - 60px);
+        color:#2A2118;
+        font-size: 18px;
+    }
+    .leaders-help-wap.shadow{
+        box-shadow: 0px 20px 30px 0px #0000001A;
+        box-shadow: 10px -20px 40px 0px #FEC67166;
+        margin-top:40px;
+    }
+    .leaders-help-wap-img{
+        text-align:center;
+        margin-top: 50px;
+    }
+    
+    /*=================================
+    * boundary-hopper-conainter
+    */
+    
+    #boundary-hopper-conainter .section-background{
+        background:#BFCCA9 !important;
+    }
+
+    .boundary-card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .boundary-card {
+      background-color: #E8E5DA;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: -10px 20px 20px 0px #0000001A;
+      width: 30%;
+    }
+    .boundary-card.w-4{
+        width: 40%;
+    }
+    .boundary-icon-circle {
+        text-align: center;
+    }
+
+    .boundary-card p {
+      margin: 0;
+      font-size: 17px;
+      color: #000000;
+    }
+
+    /*====================================
+    * introvert-card-container
+    */
+
+    .introvert-card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap; 
+      flex-direction: column;
+    }
+    .sq-d-flex{
+        display:flex;
+        gap:20px;
+        flex-wrap:nowrap;
+    }
+    .introvert-sq-d-gird{
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    .introvert-card {
+      background-color: #E8E5DA;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: -10px 20px 20px 0px #0000001A;
+      border: 1px solid #A6A6A5
+    }
+    .introvert-card.w-3{
+        width: 33%;
+    }
+    .introvert-card.w-6{
+        width: 50%;
+        display: inline-flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .introvert-icon-circle{
+        text-align:center;
+    }
+    .introvert-card.w-6 .introvert-icon-circle{
+        width: 40%;
+    }
+    .introvert-card.w-6 .in-right-content{
+        width: 60%;
+    }
+
+    .introvert-card.w-12{
+        width: 100%;
+    }
+    .boundary-icon-circle {
+        text-align: center;
+    }
+    .boundary-card p {
+      margin: 0;
+      font-size: 17px;
+      color: #000000;
+    }
+    .sq-heading-style h2{
+        font-size: 36px !important;
+        margin:0px;
+        padding-bottom: 10px;
+        color:#2A2118;
+        line-height:1.4em;
+        position:relative;
+    }
+    .sq-heading-style.before h2{
+    }
+    .sq-heading-style p{
+        font-size: 18px !important;
+        margin: 10px 0px 0px 0px;
+        color:#2A2118;
+        font-weight: 400 !important;
+        
+    }
+    /*.sq-heading-style.before h2:before {*/
+    /*    content: "";*/
+    /*    background-image: url('https://images.squarespace-cdn.com/content/6875fe54bcbd23389d32440c/74442014-e2d2-42b7-9b85-4609c2928e51/Group+33.png');*/
+    /*    width: 33px;*/
+    /*    height: 43px;*/
+    /*    position: absolute;*/
+    /*    right: -35px;*/
+    /*    bottom: -15px;*/
+    /*}*/
+    
+    /*.sq-heading-style.before h2 {*/
+    /*    background-image: url(https://images.squarespace-cdn.com/content/6875fe54bcbd23389d32440c/74442014-e2d2-42b7-9b85-4609c2928e51/Group+33.png);*/
+    /*    background-position: right bottom;*/
+    /*    background-repeat: no-repeat;*/
+    /*    padding-right: 56px;*/
+    /*}*/
+
+    .sq-heading-style.before h2:after{
+        content:"";
+        background-image:url('https://images.squarespace-cdn.com/content/6875fe54bcbd23389d32440c/4870ba26-1a35-4749-a5a7-2aeedd4c1bfa/Group+32.png');
+        width: 33px;
+        height: 43px;
+        position: absolute;
+        left: -40px;
+        top: -20px;
+    }
+     .sq-heading-style.before img{
+         margin-bottom: -20px;
+        margin-left: 15px;
+     }
+    
+    
+    .introvert-card.plain-text{
+        padding: 50px 60px;
+    }
+    /*===============================
+    *emerging-leaders
+    */
+       .emerging-leaders-card {
+            background-color: #E8E5DA;
+            border-radius: 20px;
+            padding: 30px 0px 30px 30px;
+            display: flex;
+            align-items:center;
+        }
+        .emerging-content{
+            width: 65%;
+        }
+        .emerging-image{
+            width: 35%;
+            margin-top: -170px;
+            text-align: right;
+        }
+        .emerging-image img{
+            margin-right: -7px;
+            margin-bottom: -30px;
+            border-radius:20px;
+            box-shadow: -8px 20px 30px 0px #00000026;
+        }
+        .emerging-leaders h2{
+            margin: 0px;
+            font-size: 36px;
+            padding-bottom: 20px;
+        }
+        .emerging-leaders-card p{
+            margin: 0px;
+            font-size:20px;
+        }
+        .emerging-leaders-card p:first-child{
+            padding-bottom:15px;
+        }
+        #about-us-hero-section .section-background{
+            background:#BFCCA9 !important;
+        }
+        #about-us-hero-section .content-wrapper{
+            padding-top:0px !important;
+            padding-bottom: 20px !important;
+        }
+        #about-us-hero-section{
+            margin-bottom:-50px !important;
+        }
+        #about-us-hero-section .fe-block-c16e1975228537217ddb{
+            margin-top:-130px;
+         }
+         #about-us-hero-section p, #walking-my-talk p{
+             margin:0px !important;
+         }
+        #about-us-hero-section:before{
+            content:"";
+            background-image:url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/688b6019b407a314fc4e0385/1753964569538/about-us-bg-lates.png');
+            position:absolute;
+            bottom:20px;
+            left:0px;
+            width:100%; 
+            height:200px;
+            z-index:9;  
+            background-size: cover;
+            background-position: right top;
+        }
+         
+        #boundary-hopper-conainter:before{
+            content:"";
+            background-image:url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/688b6216cf66a66b70b9fcc1/1753965078702/boundary-hopper-top.png');
+            position:absolute;
+            top:-150px;
+            left:0px;
+            width:100%; 
+            height:200px;
+            z-index:9;
+            background-size:cover;
+        }
+        
+        #boundary-hopper-conainter:after{
+            content:"";
+            background-image:url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/688b62b9b0eb791f159f140d/1753965241302/boundary-hopper-top-line.png');
+            position: absolute;
+            top: -179px;
+            left: 0px;
+            width: 100%;
+            height: 276px;
+            z-index: 9;
+        }
+        
+    #collection-6875fe55bcbd23389d324471 #lets-begin-section .content{
+        
+    }
+      #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before {
+        content: '';
+        background: #FEC671;
+        width: 88%;
+        height: 120px;
+        position: absolute;
+        content: '';
+        right: -40px;
+        z-index: 0;
+        box-shadow: 0px -13px 20px 0px #00000026;
+        transform: rotate(171deg);
+        top: 0px;
+    }
+    .fe-block-yui_3_17_2_1_1754228139994_2917 p{
+        font-size:20px;
+    }
+   .fe-block-yui_3_17_2_1_1754228139994_3373 a {
+        border-radius: 50px !important;
+        background: #FEC671 !important;
+        box-shadow: 3.24px 6.49px 20.27px 0px #00000026;
+        color: #2A2118 !important;
+        font-size: 22px !important;
+        padding: 15px !important;
+        text-transform: capitalize !important; 
+        height: 100px !important;
+        font-weight:700 !important;
+        font-family: "Manrope" !important; 
+
+    }
+    #excutive-function-coaching-bookcall p{
+        font-size:28px;
+    }
+    .fe-block-yui_3_17_2_1_1754199654218_2948 .sqs-block-html{
+        box-shadow: -10px 20px 20px 0px #0000001A !important;
+    }
+    .fe-block-8e290b854c445d228ebc h4{
+        font-size:34px;
+    }
+    .fe-block-a37f7a690bf970b44f99 p{
+        font-size:28px;
+        margin:0px !important;
+    }
+    .fe-block-a37f7a690bf970b44f99 p:last-child{
+        margin-top:-15px!important;
+    }
+    .text-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sq-d-grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+    .text-box-element{
+        color: #000;
+        font-size: 19px;
+        box-shadow: -10px 20px 20px 0px #0000001A;
+        border-radius: 30px;
+        padding: 30px;
+    }
+     .text-box-element p{
+         margin:0px;
+     }
+    .text-box-element.light{
+        background:#FEC671;
+    }
+    .text-box-element.off-light{
+        background: #E8E5DA;
+        border: 3px solid #FEC671
+    }
+    
+    #gallup-certified-section .section-background{
+        background-color:#BFCCA9;
+    }
+    #fractional-leadership-hero:before{
+        content:"";
+        background-image: url('https://static1.squarespace.com/static/6875fe54bcbd23389d32440c/t/689086d4e6814a5f431f4150/1754302164471/Fractional-Leadership-bg.png');
+        width: 100%;
+        position: absolute;
+        height: 220px;
+        bottom: -2px;
+        left: 0;
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+    }
+    .shaping-national-wrap{
+       background:#E8E5DA;
+       box-shadow: 0px 20px 20px 0px #0000001A;
+       
+    }
+    .shaping-national-wrap{
+        display:flex;
+        border-radius: 30px;
+        justify-content: space-between;
+    }
+      .shaping-national-left {
+        width: 45%;
+        padding: 40px 5px 80px 40px;
+        color: #000000;
+    }
+     .shaping-national-left ul{
+         list-style:none;
+         padding-left:0px !important;
+         margin-top: 0px !important;
+     }
+    .shaping-national-right{
+        position:relative;
+        width:52%;
+    }
+    .shaping-national-wrap p, .shaping-national-wrap li{
+        font-size:19px !important;
+    }
+    .shaping-national-left p{
+        margin:0px !important;
+    }
+    .lets-talk-card {
+        max-width: 440px;
+        background: #FEC671;
+        box-shadow: -10px 20px 20px 0px #0000001A;
+        padding: 30px;
+        border-radius: 30px;
+        color: #000;
+        margin-bottom: -11px;
+        position: absolute;
+        bottom: -100px;
+        left:35px;
+    }
+    
+    .shaping-national-right img{
+        margin-left: 100px;
+        margin-top: -115px;
+    }
+    .lets-talk-card a{
+        display:block;
+        
+    }
+    .lets-talk-card img{
+        margin: 0px 0px -20px -10px;
+    }
+    /*.lets-talk-card img{*/
+    /*    position: absolute;*/
+    /*    right: 24px;*/
+    /*    margin: 0;*/
+    /*    top: 53px;*/
+    /*    }*/
+    .fe-block-c10bd74224b8b4e10143 p{
+        font-size:34px; 
+        font-weight:700;
+    }
+    .fe-block-2f2807afce83bf206bcd p{
+        font-size:28px;
+    }
+    
+    
+    
+        
+/*============================================
+ * custom-modal-wraper
+ * ===========================================*/
+.custom-modal-wraper{
+    
+}
+.custom-modal-wraper .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+		overflow-y:auto;
+    outline: 0;
+    background: #6f6f6f6b;
+    backdrop-filter: blur(3px);
+	display: none;
+}
+.custom-modal-wraper .modal-dialog{
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 4rem);
+    margin:8rem auto 2em auto;
+}
+.custom-modal-wraper .modal-dialog.modal-md{
+      max-width: 820px;
+  }
+
+.custom-modal-wraper .modal-dialog.modal-lg{
+      max-width: 900px;
+  }
+.custom-modal-wraper .modal-dialog.modal-xl{
+	 max-width: 1200px;
+}
+
+.custom-modal-wraper .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #FCFBF4;
+    background-clip: padding-box;
+    border-radius: 20px;
+    outline: 0;
+    padding: 40px 40px 40px 40px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+.custom-modal-wraper .modal-header{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.custom-modal-wraper .close-btn{
+	padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    font-size: 24px;
+    color: #515151;
+    outline: 0px;
+    cursor: pointer;
+}
+
+.custom-modal-wraper .modal-d-flex{
+		display: flex;
+		gap: 30px;
+	}
+.custom-modal-wraper .modal-d-flex.align-item-center{
+	align-items: center;
+}
+.custom-modal-wraper .mw-6{
+	width: 50%;
+	}
+.custom-modal-wraper .mw-6.content-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.custom-modal-wraper .mw-3{
+		width: 30%;
+	}
+
+.custom-modal-wraper .mw-4{
+		width: 40%;
+	}
+.custom-modal-wraper .mw-8{
+		width: 60%;
+	}
+.custom-modal-wraper .m-image-box{
+		display:flex;
+	    gap: 30px;
+	    align-items: center;
+	    padding-bottom:10px;
+	}
+.custom-modal-wraper .m-image-box .profile-img{
+		width: 120px;
+	}
+.custom-modal-wraper .m-image-box .profile-img img{
+		width: 100px;
+	}
+.custom-modal-wraper .m-image-box .profile-name{
+		width:calc(100% - 120px);
+        font-family: "Playfair Display" !important;
+		font-weight: 700;
+		font-size: 32px;
+		margin-top:10px;
+	}
+.custom-modal-wraper .mp-content img{
+		border-radius: 30px;
+		width: 100%;
+	}
+.custom-modal-wraper .mp-content p{
+	padding:0px;
+	margin: 0px;
+}
+.custom-modal-wraper p, .custom-modal-wraper li{
+		font-size: 16px;
+		color: #000;
+		line-height: 1.25em;
+	}
+.custom-modal-wraper .mp-content p:first-child{
+    margin-top:0px !important;
+}
+.custom-modal-wraper .mp-content ul{
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+	}
+
+.mp-image img{
+		width: 100%;
+		border-radius: 30px;
+}
+.custom-modal-wraper .leadership-button{
+		padding: 20px 30px;
+		background: #FEC671;
+		border-radius: 50px;
+		color:#2A2118;
+		font-family: Manrope;
+		font-weight: 600;
+		font-size: 19.17px;
+        display: inline-block;
+        text-decoration: none;
+	}
+.custom-modal-wraper .mp-buttons{
+		display: flex;
+	    gap: 20px;
+	    align-items: center;
+	}
+.custom-modal-wraper .mp-buttons a{
+		display: block;
+		text-decoration: none;
+	}
+.custom-modal-wraper .book-exploratory-button img{
+  	max-width: 180px;
+  	margin: -20px 0px;
+  }
+.custom-modal-wraper .mp-next{
+  	text-align: right;
+  	color:#000;
+  	margin-bottom:16px;
+  }
+.custom-modal-wraper .pm-top-margin {
+  	margin-top:-20px;
+  }
+.sq-popu-show{
+    cursor:pointer;
+}
+#an-entrepreneur-next .mp-next{
+    margin-top:25px;
+}
+.text-flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+    gap: 10px;
+}
+.modal-footer-part{
+	padding-top: 15px;
+}
+.modal-footer-part{
+	align-items: center;
+}
+#back-to-top-button {
+    display: inline-block;
+    background-color: #FEC671;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: 0px 20px 30px 0px #0000001A;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    color:#2A2118;
+    font-weight:600;
+    }
+    #back-to-top-button:hover {
+      cursor: pointer;
+    }
+    #back-to-top-button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+        
+    
+    #collection-6875fe56bcbd23389d324514 .fe-6879c246a3bb7a19eee598d2, #collection-6875fe56bcbd23389d324514 .fe-block-yui_3_17_2_1_1752808872002_15511 {
+        display:none;
+    }
+    
+       #lets-begin-section .fluid-engine {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 30px;
+        width: 90%;
+        background: #494237;
+        margin-left: 10%;
+        box-sizing: border-box;
+        z-index:999;
+    }
+    #lets-begin-section .content-wrapper{
+        padding:110px 0px !important;
+    }
+
+    #lets-begin-section .content:after {
+    	background: #FEC671;
+    	width: 130%;
+    	height: 110px;
+    	position: absolute;
+    	content: '';
+    	left: -10%;
+    	z-index: 0;
+    	box-shadow: 0px 15px 20px 0px #00000026;
+    	transform: rotate(172deg);
+    	bottom: 0px;
+    }
+
+    #lets-begin-section .fe-block:first-child{
+        width:40% !important;
+    }
+    #lets-begin-section .fe-block:last-child{
+        width:400px !important;
+    }
+    .header-menu-cta a.theme-btn--primary.btn.sqs-button-element--primary {
+        background: #FEC671;
+        border-radius: 50px;
+        color: #2A2118;
+        color: #2A2118;
+        font-weight: 600;
+    }
+    .mySwiperfl .slider-next, .mySwiper .slider-next, .mySwiper .slider-prev, .mySwiperfl .slider-prev{
+        opacity: 0;
+        visibility: hidden;
+    }
+    /*=============================================
+    * Responsive 
+    *==============================================*/
+    
+   @media (max-width:1600px) {
+        #lets-begin-section .fluid-engine::before{
+            width:95% !important;
+            
+        }
+        .fe-block-yui_3_17_2_1_1752808872002_3996, .fe-block-ab54cbf0a300958c1d06{
+            grid-area: 2 / 16 / 4 / 28 !important;
+            z-index: 2;
+        }
+        
+        #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before {
+            transform: rotate(169deg);
+        }
+    }
+    @media (max-width:1366px) {
+        
+        .conversation-image {
+            width: 55%;
+            margin-top: -100px;
+        }
+
+        .fe-block-yui_3_17_2_1_1752563299679_9949 .sqsrte-text-color--white{
+            font-size:100px;
+        }
+        #meet-unorthodox-coach ul{
+            gap:20px;
+        }
+        #meet-unorthodox-coach .list-item-content__description p{
+            font-size:18px !important;
+        }
+        .leadership-card.muscles {
+            padding: 30px 40px 30px 50px;
+        }
+        .leadership-card.compass {
+            padding: 30px 70px 30px 40px;
+        }
+        
+        .bubble {
+            border-radius: 100px;
+            padding: 10px 30px;
+            max-width: 250px;
+        }
+        .testimonial-slider .testimonial-text{
+            font-size:24px;
+        }
+       .fe-block-yui_3_17_2_1_1752808872002_3996 {
+            grid-area: 2 / 17 / 5 / 26 !important;
+            z-index: 2;
+        }
+        .bubble-title {
+            font-size: 24px;
+        }
+        .bubble-desc p {
+            font-size: 18px;
+        }
+        .testimonial-slider .testimonial-card {
+            padding: 40px 40px 40px 40px;
+        }
+        .testimonial-slider.about-us .testimonial-card{
+            padding: 40px 40px 0px 40px !important;
+        }
+        
+        /*#lets-begin-section .fluid-engine h3 {*/
+        /*    top: 20px !important;*/
+        /*}*/
+        .work-with-section .card-text h2 {
+            font-size: 32px;
+        }
+        .light-animation{
+            height:600px;
+        }
+        #about-me-section:before{
+            height:220px;
+        }
+        #how-can-help-secton:before{
+            height:400px;
+        }
+        .leadership-card-wraper{
+            margin-left:-60px;
+        }
+        .left-title h2{
+            font-size:36px;
+        }
+    }
+    
+    
+  @media (max-width:1266px) {
+    .custom-modal-wraper .modal-dialog {
+        min-height: calc(100% - 4rem);
+        margin: 8rem 1rem 2em 1rem;
+    }
+    .light-card-title{
+        font-size:36px;
+    }
+    .fe-block-14cf49ec8cd9de01d396 p {
+        padding-right: 180px;
+    }
+    #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before{
+        transform: rotate(161deg);
+    }
+ }
+ 
+    @media (max-width:1175px) {
+         .fe-block-yui_3_17_2_1_1752563299679_9949 .sqsrte-text-color--white{
+            font-size:80px;
+        }
+          .roles-describe-section .icon {
+            width: 80px;
+            height: 80px;
+        }
+        .roles-describe-section .content h3 {
+            font-size: 20px !important;
+        }
+        
+        .light-animation{
+            height:500px;
+        }
+        .leadership-card p{
+            font-size:20px;
+        }
+        .leadership-card{
+            height:700px;
+        }
+        .leadership-card.compass {
+            padding: 30px 40px 30px 30px;
+        }
+       .leadership-card.muscles {
+            padding: 30px 30px 30px 40px;
+        }
+        .leadership-card.muscles img {
+            margin-left: 45px;
+        }
+        .fe-block-yui_3_17_2_1_1753419496593_2062 h4{
+            font-size: 22px !important;
+        }
+        #meet-unorthodox-coach .list-item-content__title{
+            font-size:20px !important;
+        }
+        #meet-unorthodox-coach ul {
+            gap: 20px !important;
+        }
+        #meet-unorthodox-coach .list-item-content__description p {
+            font-size: 14px !important;
+        }
+        .how-can-help .left-title h2{
+            font-size:28px !important;
+        }
+        .line-shape .left-title p {
+            font-size: 14px;
+            white-space: normal;
+        }
+        .sq-heading-style h2 {
+            font-size: 28px !important;
+        }
+        
+        .sq-heading-style.before h2:after{
+            width: 24px;
+            height: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .sq-heading-style.before img{
+            width: 24px;
+            height: 30px;
+        }
+        
+        #meet-unorthodox-coach .list-section-title p, .fe-block-yui_3_17_2_1_1752734443872_2216 h2, .fe-block-yui_3_17_2_1_1752748159608_6709 h2, .fe-block-yui_3_17_2_1_1752808872002_9258 h2{
+            font-size:32px !important;
+        }
+        #about-me-section:before{
+            height:175px;
+        }
+        .work-with-section .icon{
+            width:100px;
+            height:100px;
+        }
+        .work-with-section .card-text h2 {
+            font-size: 24px;
+        }
+        .bubble-desc p {
+            font-size: 16px;
+        }
+        #whom-serve-best:after{
+            width:500px; 
+            height:500px;
+        }
+        #back-to-top-button{
+            width:60px; 
+            height:60px;
+            font-size:14px;
+        }
+        #how-can-help-secton:before{
+            height:300px;
+        }
+        .testimonial-slider .testimonial-text {
+            font-size: 20px;
+        }
+        .testimonial-slider .testimonal-content-details{
+            gap:20px;
+        }
+        .card-footer .mail-copy-header h3, .card-footer h4{
+           font-size: 18px;
+        }
+        .fe-block-yui_3_17_2_1_1752808872002_3996 {
+            grid-area: 2 / 17 / 5 / 40 !important;
+        }
+        .fe-block-yui_3_17_2_1_1752808872002_3619{
+            grid-area: 2 / 4 / 4 / 40 !important;
+        }
+        .react-form-contents .form-submit-button{
+            font-size:18px !important;
+        }
+        .custom-modal-wraper .m-image-box .profile-img {
+            width: 80px;
+        }
+        .custom-modal-wraper .m-image-box .profile-name{
+            font-size:24px; 
+        }
+        
+        .work-with-section .card.active .work-card-details {
+            font-size: 18px;
+        }
+        .leadership-card h3{
+            font-size:22px;
+            
+        }
+        .emerging-leaders-card p {
+            font-size: 18px;
+        }
+        #about-us-hero-section:before{
+            height:120px;
+        }
+        #boundary-hopper-conainter:before{
+            height:170px;
+        }
+        #boundary-hopper-conainter:after {
+            top: -150px;
+            height: 200px;
+        }
+        /*===strengths-coaching===*/
+        .light-card-title {
+            font-size: 32px;
+        }
+        .leaders-help-wap {
+            padding: 30px;
+        }
+        .light-card-details {
+            font-size: 16px;
+        }
+        .light-card-title {
+            padding: 30px 0px;
+        }
+        
+        #leadership-coaching-section:before {
+            height: 150px;
+        }
+        .sq-heading-style p{
+            font-size:16px !important;
+        }
+        p{
+            font-size:16px;
+        }
+        #excutive-function-coaching-bookcall p {
+            font-size: 22px;
+        }
+        .fe-block-a37f7a690bf970b44f99 p {
+            font-size: 22px;
+        }
+        
+        .fe-block-8e290b854c445d228ebc h4 {
+            font-size:28px;
+        }
+    }
+     @media (max-width:1024px) {
+        .header-menu-nav-item a {
+            margin: 2vw 5vw !important;
+            font-size: 20px !important;
+        }
+        .boundary-card p{
+            font-size:16px;
+        }
+         .emerging-leaders-card p {
+            font-size: 16px;
+        }
+        
+        #whom-serve-best:before {
+            width: 400px;
+            height: 400px;
+        }
+        .fe-block-14cf49ec8cd9de01d396 p {
+            padding-right: 160px;
+        }
+        
+       .conversation-s-text {
+            width: 100%;
+            margin-top: -2px;
+        }
+     }
+    @media (max-width:991px) {
+         .mySwiperfl .slider-next, .mySwiper .slider-next, .mySwiper .slider-prev, .mySwiperfl .slider-prev{
+            opacity: 1;
+            visibility: visible;
+        }
+        .testimonial-slider .thumbs-swiper, .testimonial-slider  .thumbs-swiperfl{
+           opacity:0;
+           z-index:-1;
+           position:absolute;
+        }
+        .swiper-button-next:after, .swiper-button-prev:after{
+            font-size:30px;
+            color: #FFF;
+        }
+        .testimonial-slider .swiper-button-next{
+            right:0px;
+        }
+        .testimonial-slider .swiper-button-prev{
+            left:0px;
+        }
+        .fractional-leadership .testimonial-card {
+            padding: 40px 30px 0px 30px !important;
+        }
+        .conversation-image {
+            width: 60%;
+            margin: 0px auto;
+            margin-top: -100px;
+            position:relative;
+        }
+        .conversations-top-box {
+        	flex-wrap: wrap;
+        	flex-direction: column-reverse;
+        }
+        .conversation-top-image {
+        	width: 100%;
+        }
+        .conversation-s-text {
+        	width: 100%;
+        	margin-top: -2px;
+        }
+        .our-conversations-wrap {
+        	font-size: 16px;
+        	line-height: 24px;
+        }
+        
+        .fe-block-yui_3_17_2_1_1752563299679_9949 .sqsrte-text-color--white {
+            font-size: 60px;
+        }
+        .line-shape .left-title{
+            position: relative;
+            top:0px;
+        }
+        .custom-modal-wraper .leadership-button {
+            padding: 15px 15px;
+            font-size: 16px;
+        }
+      .email-copy a {
+            font-size: 13px;
+        }
+       .how-can-help{
+            flex-direction: column;
+       }
+       /*===========================*/
+      
+       .line-shape{
+           width:100%;
+           margin-bottom:40px;
+       }
+       .line-shape svg{
+           display:none !important;
+       }
+       .lines{
+        width:100%;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 200px;
+       }
+       .bubble {
+            border-radius: 100px;
+            padding: 15px 30px;
+            max-width: none;
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .bubble-desc {
+            clip-path: polygon(12% 0, 88% 0, 100% 100%, 0% 100%) !important;
+            height: 100%;
+            margin: 0px;
+            width: 100%;
+            padding: 20px 50px;
+            text-align: center;
+            background: linear-gradient(185deg, #FEC671 -21.4%, rgb(218 228 237 / 76%) 100%);
+            box-sizing: border-box;
+        }
+       .line-connector{
+            width:45%;
+            flex-direction: column;
+        }
+        .bubble-title {
+            font-size: 20px;
+        }
+        .line-shape .left-title br{
+            display:none;
+        }
+        
+        .work-with-section .card.active .work-card-details {
+            font-size: 16px;
+        }
+        .leadership-card p {
+            font-size: 18px;
+        }
+        .leadership-card h3{
+            font-size:20px;
+        }
+        
+        .light-card-title {
+            font-size: 28px;
+        }
+        .conversation-land-grid.d-flex{
+            gap:10px;
+        }
+        .conversation-land-grid.d-flex .conversation-land-box {
+            width: 46%;
+        }
+        #excutive-function-coaching-bookcall p {
+            font-size: 18px;
+        }
+        
+        .fe-block-a37f7a690bf970b44f99 p {
+            font-size: 18px;
+        }
+        
+        .testimonial-slider.about-us .testimonial-card {
+            padding: 20px 30px 0px 30px !important;
+        }
+        .testimonial-slider .testimonial-text {
+            font-size: 18px;
+            line-height: 1.15em;
+        }
+        .testimonial-slider.about-us .testimonial-author, .testimonial-slider.testimonial-slider .testimonial-author {
+            font-size: 16px;
+            line-height: 1.25em;
+        }
+        .testimonial-slider.about-us .testimonal-button p, .testimonial-slider.testimonial-slider .testimonal-button p{
+            font-size: 16px;
+            line-height: 1.25em;
+        }
+        .testimonial-slider .avatar-top img {
+            width: 90px;
+            height: 90px;
+            margin: -70px auto 20px;
+        }
+        #entrepreneur h4, #managers h4, #adult h4, #thinker h4{
+            font-size:18px;
+        }
+        #boundary-hopper-conainter:before {
+            height: 130px;
+            top: -80px;
+        }
+        #boundary-hopper-conainter:after {
+            top: -94px;
+            height: 186px;
+            background-size: cover;
+        }
+    }
+    
+    @media (max-width:767px) {
+        .conversation-image {
+            width: 70%;
+        }
+        .roles-describe-section {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .roles-describe-section .icon {
+            width: 60px;
+            height: 60px;
+        }
+        .roles-describe-section .content h3 {
+            font-size: 18px !important;
+        }
+        .fe-block-yui_3_17_2_1_1752563299679_9949 .sqsrte-text-color--white {
+            font-size: 50px;
+            line-height:1.25em;
+        }
+        
+        .light-animation{
+            height:400px;
+        }
+        .custom-modal-wraper .modal-d-flex{
+            flex-wrap:wrap;
+        }
+        .mw-4, .mw-8, .mw-9, .mw-3{
+            width:100% !important;
+        }
+        .leadership-card-wraper{
+            margin-left:0px;
+        }
+        .leadership-card-wraper{
+            gap:20px;
+        }
+        .leadership-card.compass {
+            padding: 20px 30px 20px 20px;
+        }
+       .leadership-card.muscles {
+            padding: 20px 20px 20px 30px;
+        }
+        .leadership-card p {
+            font-size: 16px;
+        }
+        .leadership-card.muscles img {
+            margin-left: 10px;
+        }
+        .leadership-card {
+            height: 100%;
+            padding-bottom: 60px !important;
+        }
+        .fe-block-yui_3_17_2_1_1753419496593_2062 h4{
+            font-size:16px !important;
+        }
+        .fe-block-yui_3_17_2_1_1752563299679_9949 .sqsrte-text-color--white {
+            font-size: 40px;
+            line-height:1.25em;
+        }
+        .react-form-contents .field-list .form-item {
+            width: 100%;
+        }
+        
+        .work-with-section .card{
+            padding:20px;
+        }
+        .work-with-section .icon {
+            width: 70px;
+            height: 70px;
+        }
+        .work-with-section .card-text h2 {
+            font-size: 20px;
+        }
+        .work-with-section .work-card-details {
+            margin-bottom: 30px;
+        }
+        
+        .bubble {
+            height: 100px;
+            box-sizing: border-box;
+        }
+        .bubble-title {
+            font-size: 18px;
+        }
+        #how-can-help-secton:before {
+            height: 200px;
+        }
+        .card-footer {
+            max-width: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sq-heading-style h2 {
+            font-size: 24px !important;
+            box-sizing: border-box;
+        }
+        .sq-heading-style.before h2:after{
+            left:-20px;
+        }
+        .how-can-help .left-title h2 {
+            font-size: 24px !important;
+            white-space: break-spaces;
+        }
+        .testimonial-slider {
+            margin: 0px auto;
+            padding: 0 0px;
+        }
+        
+        .boundary-card-container{
+            flex-wrap:wrap;
+        }
+        .boundary-card, .boundary-card.w-4{
+            width:47%;
+            box-sizing: border-box;
+        }
+        .introvert-sq-d-gird {
+            grid-template-columns: repeat(2, 1fr);
+            gap:10px;
+        }
+        .emerging-leaders-card{
+            flex-direction: column-reverse;
+            padding:30px;
+        }
+        .emerging-content, .emerging-image{
+            width:100%;
+            text-align: center;
+        }
+        .emerging-content{
+            margin-top:30px;
+        }
+        .emerging-image img {
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        .leaders-help-wap {
+            padding: 20px;
+        }
+        .introvert-card{
+            padding:20px;
+        }
+        #lets-begin-section .fluid-engine::before {
+            width: 100% !important;
+        }
+    
+        #lets-begin-section .content:after {
+            height: 80px;
+            transform: rotate(167deg);
+            bottom: 0px;
+        }
+        #lets-begin-section .fluid-engine{
+            margin-left:0%;
+            width:100%;
+            flex-direction: column;
+            align-items: center;
+        }
+         #lets-begin-section .fe-block:first-child,  #lets-begin-section .fe-block:last-child {
+            width: 100% !important;
+        }
+        #lets-begin-section .fluid-engine {
+            text-align: center;
+        }
+        
+        #lets-begin-section .content-wrapper {
+            padding: 80px 0px !important;
+        }
+        #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before {
+            transform: rotate(164deg);
+            height:80px;
+        width: 100%;
+        }
+        .light-card-details {
+            padding: 40px 100px;
+        }
+        #leadership-coaching-section:before {
+            height: 100px;
+        }
+        .fe-block-14cf49ec8cd9de01d396 p {
+            padding-right: 0px;
+        }
+        #excutive-function-coaching-bookcall p {
+            font-size: 16px;
+        }
+        .c-land-box-element{
+            padding: 0px 15px 15px 15px;
+            border-radius: 20px;
+        }
+        .fe-block-8e290b854c445d228ebc h4 {
+            font-size:24px;
+        }
+        .fe-block-a37f7a690bf970b44f99 p {
+            font-size: 16px;
+        }
+        .testimonial-slider .thumbs-swiper, .testimonial-slider .thumbs-swiperfl {
+            padding: 0px 36px;
+            max-width: 330px;
+        }
+         #entrepreneur h4, #managers h4, #adult h4, #thinker h4{
+            font-size:16px;
+        }
+        .leader-help-content {
+            font-size: 16px;
+            line-height:1.25em;
+        }
+        .testimonial-slider.about-us .testimonal-button p, .testimonial-slider.testimonial-slider .testimonal-button p {
+            font-size: 12px;
+            line-height: 1.25em;
+        }
+        #boundary-hopper-conainter:after{
+            display:none;
+        }
+    }
+
+ @media (max-width:575px) {
+  .leadership-card {
+        min-height:400px;
+        height: 100%;
+        padding-bottom: 60px !important;
+    }
+    .leadership-card p {
+        font-size: 10px;
+    }
+    .lines {
+        flex-direction: column;
+    }
+   .line-connector {
+        width: 100%;
+    }
+    .fe-6879c0636b2a577e106967b3{
+        display: flex !important;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    #lets-begin-section .fluid-engine h3 {
+        font-size: 32px !important;
+    }
+    #lets-begin-section .fluid-engine p:first-child {
+        margin-bottom: 0px !important;
+        margin-top: 22px !important;
+    }
+     .boundary-card, .boundary-card.w-4{
+        width:100%;
+        box-sizing: border-box;
+    }
+    .introvert-sq-d-gird {
+            grid-template-columns: repeat(1, 1fr);
+    }
+   .leadership-card h3 {
+        font-size: 13px;
+        margin-top:20px;
+    }
+    /*===strengths-coaching===*/
+    .light-card-title {
+        font-size: 20px;
+    }
+    .light-card-details {
+        padding: 40px 80px;
+    }
+    .light-card-title {
+        padding: 20px 0px;
+    }
+   #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before {
+        transform: rotate(160deg);
+        height: 80px;
+        width: 110%;
+    }
+    .custom-modal-wraper .mp-buttons{
+        align-items: baseline;
+        flex-direction: column;
+    }
+    
+ }
+  @media (max-width:475px) {
+      
+    .light-card-details {
+        padding: 30px 50px;
+    }
+    .light-card-title{
+        width:100%;
+    }
+    .light-card-details {
+        clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+    }
+    .conversation-land-grid.d-flex .conversation-land-box {
+        width: 100%;
+    }
+  }
+ @media (max-width:375px) {
+    .light-card-details {
+        font-size: 14px;
+    }
+}
