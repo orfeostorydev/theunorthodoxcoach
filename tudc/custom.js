@@ -97,6 +97,7 @@ jQuery(document).ready(function($) {
 });
 
 jQuery(document).ready(function($) {
+    
         $('.roles-describe-section .card').on('click', function(){
              $('.card').removeClass('active');
              $(this).addClass('active');
@@ -287,9 +288,8 @@ const mainSwiper = new Swiper(".mySwiper", {
     });
 });
 
-
 $(document).ready(function($) {
- 
+
     if ($('body').hasClass('squarespace-editable')) {
         return;
     }
@@ -298,7 +298,36 @@ $(document).ready(function($) {
     let isPermanentlyUnlocked = false;
     const $targetDiv = $('.describe-outer-section');
     const $unlockItem = $('.roles-describe-section .card');
-    const offsetTrigger = 100;
+    
+    let offsetTrigger = 0;
+
+    function updateOffsetTrigger() {
+        let windowWidth = window.innerWidth;
+        let windowHeight = window.innerHeight;
+        let orientation = (windowWidth > windowHeight) ? 'landscape' : 'portrait';
+
+        if (orientation === 'landscape') {
+            if (windowWidth >= 1024) {
+                offsetTrigger = 100;
+            } else if (windowWidth >= 991 && windowWidth < 1024) {
+                offsetTrigger = 150;
+            } else if (windowWidth >= 575 && windowWidth < 991) {
+                offsetTrigger = -100;
+            }
+        } else { // portrait
+            if (windowWidth >= 1024) {
+                offsetTrigger = 100;
+            } else if (windowWidth >= 991 && windowWidth < 1024) {
+                offsetTrigger = 120;
+            } else if (windowWidth >= 575 && windowWidth < 991) {
+                offsetTrigger = -50;
+            }
+        }
+    }
+
+    // Call on load
+    updateOffsetTrigger();
+
     let scrollPosition = 0;
     let originalOffsetTop;
 
@@ -346,7 +375,6 @@ $(document).ready(function($) {
         $('.scroll-placeholder').remove();
     }
 
-    // Wait for layout to be fully ready before measuring and locking
     setTimeout(() => {
         originalOffsetTop = $targetDiv.offset().top;
 
@@ -357,9 +385,8 @@ $(document).ready(function($) {
                 lockScroll();
             }, 10);
         }
-    }, 50); // Delay ensures layout is settled before measuring
+    }, 50);
 
-    // Handle scroll
     $(window).on('scroll', function () {
         if (isPermanentlyUnlocked) return;
 
@@ -379,60 +406,57 @@ $(document).ready(function($) {
     $unlockItem.on('click', function () {
         if (isScrollLocked) {
             unlockScroll(true);
-           
-          const hmainSwiper = new Swiper(".mySwiper", {
-              loop: true,
-              centeredSlides: true,
-              spaceBetween: 30,
-              breakpoints: {
-                0: {
-                  slidesPerView: 1,
-                  navigation: {
-                    nextEl: ".slider-next",
-                    prevEl: ".slider-prev",
-                 }
-                },
-                768: {
-                  slidesPerView: 2, 
-                },
-                992: {
-                  slidesPerView: 2.25, 
+
+            const hmainSwiper = new Swiper(".mySwiper", {
+                loop: true,
+                centeredSlides: true,
+                spaceBetween: 30,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        navigation: {
+                            nextEl: ".slider-next",
+                            prevEl: ".slider-prev",
+                        }
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    992: {
+                        slidesPerView: 2.25,
+                    }
                 }
-              }
             });
 
-              
             const hthumbsSwiper = new Swiper(".thumbs-swiper", {
-                  loop: true,
-                  slidesPerView: 3,
-                  centeredSlides: true,
-                  slideToClickedSlide: false, // Disable side-click
-                  effect: "coverflow",
-                  watchSlidesProgress: true,
-                  centerInsufficientSlides: true,
-                  navigation: {
+                loop: true,
+                slidesPerView: 3,
+                centeredSlides: true,
+                slideToClickedSlide: false,
+                effect: "coverflow",
+                watchSlidesProgress: true,
+                centerInsufficientSlides: true,
+                navigation: {
                     nextEl: ".thumbs-next",
                     prevEl: ".thumbs-prev",
-                  },
-                  coverflowEffect: {
+                },
+                coverflowEffect: {
                     rotate: 0,
                     stretch: 10,
                     depth: 80,
                     modifier: 3,
                     slideShadows: false,
-                  }
-           });
-              
-            hmainSwiper.controller.control = hthumbsSwiper;
-            hthumbsSwiper.controller.control = hmainSwiper;
-            	
-            jQuery(window).on('load', function () {
-                  setTimeout(function () {
-                    hmainSwiper.slideNext(0);
-                  }, 300);
+                }
             });
 
+            hmainSwiper.controller.control = hthumbsSwiper;
+            hthumbsSwiper.controller.control = hmainSwiper;
 
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    hmainSwiper.slideNext(0);
+                }, 300);
+            });
         }
     });
 
@@ -451,12 +475,14 @@ $(document).ready(function($) {
         }
     });
 
-    $(window).on('resize', function () {
+    // On resize or orientation change
+    $(window).on('resize orientationchange', function () {
+        updateOffsetTrigger();
         if (isScrollLocked) {
             $targetDiv.css('width', $targetDiv.parent().width() + 'px');
         }
     });
- 
+
 });
 
 
@@ -466,22 +492,35 @@ $(document).ready(function($) {
 
         var target = $(this).data('target');
 
+         $('body').addClass('modal-overflow');
+
         // Hide all modals
         $('.modal').hide();
 
         // Show the targeted modal
         $(target).fadeIn();
+         $('#how-can-help-secton').addClass('hide');
+         $('#real-transformation-section').addClass('hide');
+        
       });
 
       // Close on clicking close button
       $('.close-btn').on('click', function() {
         $(this).closest('.modal').fadeOut();
+         $('body').removeClass('modal-overflow');
+         
+         $('#how-can-help-secton').removeClass('hide');
+         $('#real-transformation-section').removeClass('hide');
       });
 
       // Close on clicking outside modal-content
       $(window).on('click', function(e) {
         if ($(e.target).hasClass('modal')) {
-          $(e.target).fadeOut();
+         $(e.target).fadeOut();
+         $('body').removeClass('modal-overflow');
+         
+         $('#how-can-help-secton').removeClass('hide');
+         $('#real-transformation-section').removeClass('hide');
         }
       });
       
@@ -495,5 +534,41 @@ $(document).ready(function($) {
             $('body').removeClass('active');
           }
         });
+          
+    // if(jQuery('.sqs-jacquard-outline-beta').length > 0){
+        
+    // }else{
+    //   var currentDomain = window.location.hostname;
+    //   var builtInDomain = "elephant-owl-6ayb.squarespace.com";
+    //   var mainDomain = "https://www.theunorthodoxcoach.com";
       
-    });
+    //   if (currentDomain === builtInDomain) {
+    //       window.location.href = mainDomain + window.location.pathname + window.location.search;
+    //     }
+    // }
+
+  
+}); 
+// (function() {
+//     var builtInDomain = "elephant-owl-6ayb.squarespace.com";
+//     var primaryDomain = "https://www.theunorthodoxcoach.com";
+// console.log(window.location.hostname);
+//     // Only redirect if on built-in domain AND not logged in
+    
+//     if(document.body.classList.contains('squarespace-config')){
+//         console.log('Exist');
+//     }else{
+//           console.log('111111111111');
+//     }
+//     if (
+//         window.location.hostname === builtInDomain &&
+//         !document.body.classList.contains('squarespace-config') &&
+//         !document.body.classList.contains('squarespace-editable')
+//     ) {
+//         // Use a short delay to avoid Squarespace blocking the redirect
+//         setTimeout(function() {
+//             window.location.replace(primaryDomain);
+//         }, 100);
+//     }
+// })();  
+ 

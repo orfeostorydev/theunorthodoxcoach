@@ -1,17 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .light-animation{
     height:700px;
 }
 
 .light-animation img {
-    transform: scale(.3);
+    -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+            transform: scale(.3);
     left: -35px;
     top: 55px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
-    transform-origin: top;
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
     position: absolute;
 } 
 .light-active  .light-animation img{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     top:-50px;
 }
 
@@ -43,8 +58,34 @@ b, strong {
     font-weight: 600!important;
 }
 
+.fe-block-yui_3_17_2_1_1752563299679_9949, .fe-block-yui_3_17_2_1_1753326372418_2388, #about-me-section{
+    z-index:3 !important;
+}
+ #lets-begin-section .fluid-engine{
+    z-index:2 !important;
+}
+/*#how-can-help-secton, #real-transformation-section{*/
+/*    z-index:-1 !important;*/
+/*}*/
+#whom-serve-best{
+    z-index:9999 !important;
+}
+.fe-block-yui_3_17_2_1_1754382432954_2253, .fe-6877ddcf38e16c027a99fe78{
+    z-index:9999!important;
+}
+
+body.modal-overflow{
+    overflow:hidden;
+}
+.form-submission-text p{
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+}
 /*===================================*/
 .fe-block-yui_3_17_2_1_1752563299679_9949 .sqsrte-text-color--white{
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(33.09%, #2A2118), color-stop(86.28%, rgba(42, 33, 24, 0)));
+  background: -o-linear-gradient(bottom, #2A2118 33.09%, rgba(42, 33, 24, 0) 86.28%);
   background: linear-gradient(360deg, #2A2118 33.09%, rgba(42, 33, 24, 0) 86.28%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,7 +94,10 @@ b, strong {
   font-size:115px;
 } 
 
-
+/*#how-can-help-secton.hide, #real-transformation-section.hide{*/
+/*    visibility: hidden !important;*/
+/*    z-index:-1 !important;*/
+/*}*/
 /*====header-nav-wrapper====*/
 .header-nav-wrapper a{
   color:#000 !important;
@@ -65,10 +109,17 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     background-color: transparent;
     background-repeat: no-repeat;
     padding: 0px 50px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     white-space: normal;
     background-position: 0px 8px;
   	color:#000;
@@ -100,7 +151,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 .header-nav-item--folder .header-nav-folder-content {
     text-align: left !important;
     background-color: #E8E5DA !important;
-    box-shadow: 4px 4px 18px 0px #00000026;
+    -webkit-box-shadow: 4px 4px 18px 0px #00000026;
+            box-shadow: 4px 4px 18px 0px #00000026;
     padding: 20px !important;
     z-index: 0 !important;
 }
@@ -124,6 +176,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     background-color:#000;
     bottom: 0;
     left: 0;
+    -webkit-transition:.3s ease-in-out;
+    -o-transition:.3s ease-in-out;
     transition:.3s ease-in-out;
 }
 .header-nav-wrapper a:hover:before{
@@ -133,6 +187,12 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     left: auto;
     right: unset !important;
 }
+.modal-overflow section[id="whom-serve-best"]{
+   padding-top:300px !important;
+      padding-bottom:300px !important;
+
+}
+ 
 /*===================================
 *roles Describe
 ====================================*/
@@ -152,30 +212,49 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 }
 
 .roles-describe-section{
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .roles-describe-section .card {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-13.41%, rgba(252, 251, 244, 0.45)), color-stop(123.48%, rgba(150, 149, 146, 0.45)));
+  background: -o-linear-gradient(top, rgba(252, 251, 244, 0.45) -13.41%, rgba(150, 149, 146, 0.45) 123.48%);
   background: linear-gradient(180deg, rgba(252, 251, 244, 0.45) -13.41%, rgba(150, 149, 146, 0.45) 123.48%);
   border-radius: 25px;
   padding: 20px;
   color: white;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   border: 0.85px solid #E8E5DA !important;
 }
 
 .roles-describe-section .card:hover{
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-13.41%, rgba(254, 198, 113, 0.6)), color-stop(123.48%, rgba(176, 133, 68, 0.6)));
+    background: -o-linear-gradient(top, rgba(254, 198, 113, 0.6) -13.41%, rgba(176, 133, 68, 0.6) 123.48%);
     background: linear-gradient(180deg, rgba(254, 198, 113, 0.6) -13.41%, rgba(176, 133, 68, 0.6) 123.48%);
 }
 
@@ -183,9 +262,15 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
@@ -274,24 +359,35 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     .work-with-section  .card {
       background-color: #FCFBF4;
       border-radius: 12px;
-      box-shadow: 4px 12px 40px 25px #0000000D;
+      -webkit-box-shadow: 4px 12px 40px 25px #0000000D;
+              box-shadow: 4px 12px 40px 25px #0000000D;
       padding: 40px;
       border: 0.85px solid #2A2118;
+      -webkit-transition: -webkit-transform 0.4s ease;
+      transition: -webkit-transform 0.4s ease;
+      -o-transition: transform 0.4s ease;
       transition: transform 0.4s ease;
+      transition: transform 0.4s ease, -webkit-transform 0.4s ease;
       cursor:pointer;
     }
     .work-with-section .card:not(:first-child){
       margin-top: -30px;
     }
     .work-with-section .card:hover {
-      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+          -ms-transform: translateY(-4px);
+              transform: translateY(-4px);
     }
 
     .info-card-box{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       gap: 15px; 
       margin-bottom: 30px;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
     .work-with-section .work-card-details{
       display:none;
@@ -304,6 +400,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       color:#000000;
     }
     .work-with-section .card.active .work-card-details *{
+        -webkit-transition:unset !important;
+        -o-transition:unset !important;
         transition:unset !important;
     }
     .work-with-section .card.active{
@@ -314,14 +412,21 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         font-family: "Karla" !important;
     }
     .work-with-section  .icon {
-      flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
       width: 130px;
       height:130px;
       border-radius: 50%;
       background-color: #ccc;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       font-size: 24px;
       color: #fff;
     }
@@ -366,7 +471,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     width: 100%;
     position: absolute;
     height:320px;
-    bottom: 20px;
+    bottom: -20px;
     left: 0;
     z-index: 999;
     background-repeat: no-repeat;
@@ -384,7 +489,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 #meet-unorthodox-coach .list-item{
    background: #E8E5DA !important;
    border: 0.5px solid #494237;
-   box-shadow: -10px 20px 20px 0px #0000001A;
+   -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+           box-shadow: -10px 20px 20px 0px #0000001A;
    border-radius:30px;
 }
 #meet-unorthodox-coach .list-item-content__title{
@@ -403,6 +509,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     background-color:#BFCCA9 !important;
 }
  #the-leadership-wiring .user-items-list-item-container.user-items-list-simple{
+    -ms-grid-columns: (1fr)[1] !important;
     grid-template-columns: repeat(1, 1fr) !important;
  }
 
@@ -415,11 +522,17 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     width:70% !important;
 }
 #the-leadership-wiring .list-item {
-   flex-direction: row-reverse !important;
-   align-items: center;
+   -webkit-box-orient: horizontal !important;
+   -webkit-box-direction: reverse !important;
+       -ms-flex-direction: row-reverse !important;
+           flex-direction: row-reverse !important;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    background: #E8E5DA !important;
    border: 0.5px solid #494237;
-   box-shadow: -10px 20px 20px 0px #0000001A;
+   -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+           box-shadow: -10px 20px 20px 0px #0000001A;
    border-radius:30px;
    gap: 40px;
 }
@@ -441,13 +554,18 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 }
           
 .leadership-card-wraper {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       gap: 30px;
       max-width: 1200px;
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
     }
     .leadership-card {
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         max-width: 595px;
         height: 750px;
         color: white;
@@ -495,6 +613,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         position:absolute;
         left:0px; 
         bottom: 135px;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(54.38%, rgba(205, 226, 255, 0)), to(#CDE2FF));
+        background: -o-linear-gradient(top, rgba(205, 226, 255, 0) 54.38%, #CDE2FF 100%);
         background: linear-gradient(180deg, rgba(205, 226, 255, 0) 54.38%, #CDE2FF 100%);
     }
     #how-can-help-secton:before{
@@ -511,9 +631,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 }
 
     .how-can-help {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       gap: 0px;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       max-width: 1300px;
       width: 100%;
     }
@@ -535,14 +659,23 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     .lines {
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       gap: 30px;
       width: 60%;
     }
     .line-connector {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: relative;
     }
 
@@ -550,16 +683,23 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       background: #FEC671;
       border-radius: 60px;
       padding: 10px 30px;
-      box-shadow: 4px 8px 25px 0px #00000026;
+      -webkit-box-shadow: 4px 8px 25px 0px #00000026;
+              box-shadow: 4px 8px 25px 0px #00000026;
       max-width: 350px;
       width: 100%;
       text-align: center;
       position: relative;
       z-index: 9;
       height: 120px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       cursor: pointer;
       position:relative;
   }
@@ -580,14 +720,23 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
 
     .bubble-desc {
+      background: -webkit-gradient(linear, left top, right top, color-stop(-21.4%, #FEC671), to(rgba(254, 198, 113, 0)));
+      background: -o-linear-gradient(left, #FEC671 -21.4%, rgba(254, 198, 113, 0) 100%);
       background: linear-gradient(90deg, #FEC671 -21.4%, rgba(254, 198, 113, 0) 100%);
       height: 165px;
       padding-left: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-left: -80px;
-      clip-path: polygon(0 12%, 0% 0, 0% 100%, 0 90%);
+      -webkit-clip-path: polygon(0 12%, 0% 0, 0% 100%, 0 90%);
+              clip-path: polygon(0 12%, 0% 0, 0% 100%, 0 90%);
       width: calc(100% - 350px);
+          -webkit-transition: 0.4s all;
+          -o-transition: 0.4s all;
           transition: 0.4s all;
     }
     .bubble-desc p{
@@ -596,7 +745,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       line-height: 1.2;
     }
     .line-connector:hover .bubble-desc{
-      clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 90%);
+      -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 90%);
+              clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 90%);
       
     }
    
@@ -616,6 +766,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 * testimonial
 *===============================================*/
 #real-transformation-section .section-background{
+    background: -o-linear-gradient(270.02deg, rgba(254, 198, 113, 0) 0.01%, rgba(254, 198, 113, 0.7) 151.78%) !important;
     background: linear-gradient(179.98deg, rgba(254, 198, 113, 0) 0.01%, rgba(254, 198, 113, 0.7) 151.78%) !important;
 }
 
@@ -630,13 +781,19 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     /* Main Swiper */
     .testimonial-slider .mySwiper .swiper-slide {
       opacity: 1;
-      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+              transform: scale(0.8);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
 
    .testimonial-slider  .mySwiper .swiper-slide-active {
       opacity: 1;
-      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
     }
 
     .testimonial-slider .testimonial-card {
@@ -647,7 +804,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         height: 100%;
         text-align: center;
         margin: 50px auto;
-        box-shadow: 0px -8px 30px 0px #00000026;
+        -webkit-box-shadow: 0px -8px 30px 0px #00000026;
+                box-shadow: 0px -8px 30px 0px #00000026;
         margin-top:110px;
     }
     
@@ -660,11 +818,18 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
         
     .testimonial-slider.testimonial-slider .swiper-wrapper{
-         align-items:center;
+         -webkit-box-align:center;
+             -ms-flex-align:center;
+                 align-items:center;
      }
     .testimonial-slider .testimonal-content-details{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 40px;
     }
     
@@ -733,12 +898,20 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
 
     .testimonial-slider .thumb-slide {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
     .testimonial-slider .swiper-slide.thumb-slide:not(.swiper-slide-active) img{
-        transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+            -ms-transform: scale(0.75);
+                transform: scale(0.75);
     }
 
     .testimonial-slider  .thumb-slide img {
@@ -746,12 +919,19 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       height: 100px;
       border-radius: 50%;
       border: 4px solid white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+              box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
       transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
     }
 
     .testimonial-slider .swiper-slide-thumb-active img {
-      transform: scale(1.25);
+      -webkit-transform: scale(1.25);
+          -ms-transform: scale(1.25);
+              transform: scale(1.25);
       border-color: #1f2d5d;
     }
     .testimonial-slider  .thumb-slide{
@@ -765,7 +945,9 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         padding-bottom: 20px;
       }
       .testimonial-slider  .mySwiper .swiper-slide {
-        transform: scale(1) !important;
+        -webkit-transform: scale(1) !important;
+            -ms-transform: scale(1) !important;
+                transform: scale(1) !important;
         opacity: 1 !important;
       }
       .testimonial-slider .thumb-slide img {
@@ -779,8 +961,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 
     
     .footer-card-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 30px;
     }
     .card-footer {
@@ -789,12 +976,24 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       border-radius: 20px;
       background: #FFFFFF33;
       color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-     justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
       position: relative;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
       transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       overflow:hidden;
       padding:20px;
       position:relative;
@@ -816,15 +1015,22 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     
     .card-footer:hover{
+      background: -o-linear-gradient(302.66deg, rgba(254, 198, 113, 0.9) 5.26%, rgba(254, 198, 113, 0.27) 80.47%);
       background: linear-gradient(147.34deg, rgba(254, 198, 113, 0.9) 5.26%, rgba(254, 198, 113, 0.27) 80.47%);
     }
     .card-footer:hover h4, .card-footer:hover h3, .card-footer:hover a {
       color:#2A2118 !important;
     }
     .card-footer .mail-copy-header{  
+        display: -webkit-box;  
+        display: -ms-flexbox;  
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .card-footer .mail-copy-header h3{
         margin:0px !important;
@@ -840,6 +1046,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     .email-copy-action{
         padding:5px 10px;
         cursor:pointer;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
     }
     .email-copy-action.copied svg path{
@@ -854,7 +1062,9 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         margin-bottom:10px !important;
     }
      #footer-sections  .sqs-block-form{
-        justify-content: center !important;
+        -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+                justify-content: center !important;
      }
     /*#footer-sections:before{*/
     /*     content: "";*/
@@ -883,6 +1093,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       position: relative;
       height: 120px;
       width: 5px;
+      background: -webkit-gradient(linear, left top, right top, color-stop(-28.68%, rgba(146, 146, 146, 0)), color-stop(45.59%, #ffffff5c), color-stop(117.05%, rgba(255, 255, 255, 0)));
+      background: -o-linear-gradient(left, rgba(146, 146, 146, 0) -28.68%, #ffffff5c 45.59%, rgba(255, 255, 255, 0) 117.05%);
       background: linear-gradient(90deg, rgba(146, 146, 146, 0) -28.68%, #ffffff5c 45.59%, rgba(255, 255, 255, 0) 117.05%);
       overflow: hidden;
       border-radius: 4px;
@@ -893,17 +1105,22 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       top: -50%;
       height: 90%;
       width: 100%;
+      background: -webkit-gradient(linear, left top, right top, color-stop(-28.68%, rgba(146, 146, 146, 0)), color-stop(45.59%, #FFFFFF), color-stop(117.05%, rgba(255, 255, 255, 0)));
+      background: -o-linear-gradient(left, rgba(146, 146, 146, 0) -28.68%, #FFFFFF 45.59%, rgba(255, 255, 255, 0) 117.05%);
       background: linear-gradient(90deg, rgba(146, 146, 146, 0) -28.68%, #FFFFFF 45.59%, rgba(255, 255, 255, 0) 117.05%);
       border-radius: 2px;
       opacity: 0;
-      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
       will-change: transform, opacity;
-      animation: scrollBarAnim 3s ease-in-out infinite;
+      -webkit-animation: scrollBarAnim 3s ease-in-out infinite;
+              animation: scrollBarAnim 3s ease-in-out infinite;
     }
 
-    @keyframes scrollBarAnim {
+    @-webkit-keyframes scrollBarAnim {
       0% {
-        transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1);opacity: 1;
+        -webkit-transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1);
+                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1);opacity: 1;
       }
       20% {
         opacity: 1;
@@ -912,7 +1129,25 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         opacity: 1;
       }
       100% {
-        transform: translate3d(0px, 200%, 0px) scale3d(1, 1, 1);opacity: 1;
+        -webkit-transform: translate3d(0px, 200%, 0px) scale3d(1, 1, 1);
+                transform: translate3d(0px, 200%, 0px) scale3d(1, 1, 1);opacity: 1;
+      }
+    }
+
+    @keyframes scrollBarAnim {
+      0% {
+        -webkit-transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1);
+                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1);opacity: 1;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: translate3d(0px, 200%, 0px) scale3d(1, 1, 1);
+                transform: translate3d(0px, 200%, 0px) scale3d(1, 1, 1);opacity: 1;
       }
     }
     body{
@@ -920,11 +1155,14 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     
     .roles-shape-animation{
-        clip-path: polygon(0 0, 100% 0, 100% 10%, 0 10%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 10%, 0 10%);
+                clip-path: polygon(0 0, 100% 0, 100% 10%, 0 10%);
     }
     .roles-shape-animation-gradient{
         width: 100%;
         height: 450px;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(80%, #0c0c0c));
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #0c0c0c 80%);
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0c0c0c 80%);
         position: absolute;
         top: 10%;
@@ -939,7 +1177,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
      }
     .light-card-title{
         background: #FEC671;
-        box-shadow: 4px 8px 25px 0px #00000026;
+        -webkit-box-shadow: 4px 8px 25px 0px #00000026;
+                box-shadow: 4px 8px 25px 0px #00000026;
         font-family:"Playfair Display" !important;
         font-weight: 600;
         font-size: 40px;
@@ -953,9 +1192,12 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         z-index: 9;
     }
     .light-card-details {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.4%, #FEC671), to(rgba(254, 198, 113, 0)));
+        background: -o-linear-gradient(top, #FEC671 -21.4%, rgba(254, 198, 113, 0) 100%);
         background: linear-gradient(180deg, #FEC671 -21.4%, rgba(254, 198, 113, 0) 100%);
         padding: 40px 120px;
-        clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
         font-weight: 400;
         font-size: 19px;
         text-align: center;
@@ -972,11 +1214,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     
     .fe-block-yui_3_17_2_1_1753851657737_3774 {
-        box-shadow: -10px 20px 20px 0px #0000001A;
+        -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+                box-shadow: -10px 20px 20px 0px #0000001A;
         border-radius: 30px;
     }
     .fe-block-yui_3_17_2_1_1754224334864_2794{
-        box-shadow: -10px 20px 20px 0px #0000001A;
+        -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+                box-shadow: -10px 20px 20px 0px #0000001A;
         border: 3px solid #FEC671;
         border-radius: 30px;
     }
@@ -996,15 +1240,23 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     
     .our-conversations-wrap {
         background: #E8E5DA;
-        box-shadow: 0px 20px 20px 0px #0000001A;
+        -webkit-box-shadow: 0px 20px 20px 0px #0000001A;
+                box-shadow: 0px 20px 20px 0px #0000001A;
         padding: 40px; 
         border-radius: 30px;
         font-size: 19px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 20px;
     }
     .conversations-top-box{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .conversation-top-image{
@@ -1020,6 +1272,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         color:#000;
     }
     .conversations-top-box{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .conversation-top-image{
@@ -1034,18 +1288,28 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     .conversation-s-text{
         width: 70%;
-        margin-top:-10px;
+        margin-top:-15px;
+    }
+    .conversation-s-text.mobile{
+        display:none;
     }
     .conversation-land-grid{
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
       grid-template-columns: repeat(3, 1fr);
       gap:30px;
     }
   .conversation-land-grid.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
     .conversation-land-grid.d-flex .conversation-land-box{
         width:31%;
@@ -1055,10 +1319,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     .c-land-box-element{
         background: #E8E5DA;
-        box-shadow: -10px 20px 20px 0px #0000001A;
+        -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+                box-shadow: -10px 20px 20px 0px #0000001A;
         padding: 0px 30px 20px 30px;
         border-radius: 30px;
         height: 100%;
+        -webkit-transition:.3s ease-in-out;
+        -o-transition:.3s ease-in-out;
         transition:.3s ease-in-out;
         text-align:center;
     }
@@ -1066,7 +1333,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         margin-left:-18px !important;
     }
     .c-land-box-element:hover{
-        box-shadow: -5px 10px 10px 0px #00000014;
+        -webkit-box-shadow: -5px 10px 10px 0px #00000014;
+                box-shadow: -5px 10px 10px 0px #00000014;
     }
     .c-land-box-element p{
         margin:0px !important; 
@@ -1077,6 +1345,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
        text-align:center;
    }
     #real-transormation-services .section-background{
+        background: -o-linear-gradient(270.02deg, rgba(254, 198, 113, 0) 0.01%, rgba(254, 198, 113, 0.7) 151.78%);
         background: linear-gradient(179.98deg, rgba(254, 198, 113, 0) 0.01%, rgba(254, 198, 113, 0.7) 151.78%);
     }
     .fe-block-yui_3_17_2_1_1753873361836_2539  p{
@@ -1086,7 +1355,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
    .header-border:before{
         content: "";
-        box-shadow: 0px 12px 20px 0px #0000000D;
+        -webkit-box-shadow: 0px 12px 20px 0px #0000000D;
+                box-shadow: 0px 12px 20px 0px #0000000D;
         background:#E8E5DA;
         position: absolute;
         width: 100%;
@@ -1169,18 +1439,26 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     
     /*================================================*/
     .leaders-helped-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 30px;
     }
     .leaders-help-wap{
         padding: 40px;
         border-radius: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap:15px;
         background: #E8E5DA;
         border: 3px solid #FEC671;
-        box-shadow: 0px 20px 30px 0px #0000001A;
+        -webkit-box-shadow: 0px 20px 30px 0px #0000001A;
+                box-shadow: 0px 20px 30px 0px #0000001A;
         background: #E8E5DA;
     }
     .leader-help-boximage{
@@ -1192,8 +1470,10 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         font-size: 18px;
     }
     .leaders-help-wap.shadow{
-        box-shadow: 0px 20px 30px 0px #0000001A;
-        box-shadow: 10px -20px 40px 0px #FEC67166;
+        -webkit-box-shadow: 0px 20px 30px 0px #0000001A;
+                box-shadow: 0px 20px 30px 0px #0000001A;
+        -webkit-box-shadow: 10px -20px 40px 0px #FEC67166;
+                box-shadow: 10px -20px 40px 0px #FEC67166;
         margin-top:40px;
     }
     .leaders-help-wap-img{
@@ -1210,16 +1490,21 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
 
     .boundary-card-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       gap: 20px;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
 
     .boundary-card {
       background-color: #E8E5DA;
       border-radius: 15px;
       padding: 20px;
-      box-shadow: -10px 20px 20px 0px #0000001A;
+      -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+              box-shadow: -10px 20px 20px 0px #0000001A;
       width: 30%;
     }
     .boundary-card.w-4{
@@ -1240,18 +1525,29 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     */
 
     .introvert-card-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       gap: 20px;
-      flex-wrap: wrap; 
-      flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; 
+      -webkit-box-orient: vertical; 
+      -webkit-box-direction: normal; 
+          -ms-flex-direction: column; 
+              flex-direction: column;
     }
     .sq-d-flex{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
         gap:20px;
-        flex-wrap:nowrap;
+        -ms-flex-wrap:nowrap;
+            flex-wrap:nowrap;
     }
     .introvert-sq-d-gird{
+      display: -ms-grid !important;
       display: grid !important;
+      -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
     }
@@ -1259,7 +1555,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       background-color: #E8E5DA;
       border-radius: 15px;
       padding: 30px;
-      box-shadow: -10px 20px 20px 0px #0000001A;
+      -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+              box-shadow: -10px 20px 20px 0px #0000001A;
       border: 1px solid #A6A6A5
     }
     .introvert-card.w-3{
@@ -1267,9 +1564,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     .introvert-card.w-6{
         width: 50%;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         gap: 30px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .introvert-icon-circle{
         text-align:center;
@@ -1351,8 +1652,12 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             background-color: #E8E5DA;
             border-radius: 20px;
             padding: 30px 0px 30px 30px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items:center;
+            -webkit-box-align:center;
+                -ms-flex-align:center;
+                    align-items:center;
         }
         .emerging-content{
             width: 65%;
@@ -1366,7 +1671,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             margin-right: -7px;
             margin-bottom: -30px;
             border-radius:20px;
-            box-shadow: -8px 20px 30px 0px #00000026;
+            -webkit-box-shadow: -8px 20px 30px 0px #00000026;
+                    box-shadow: -8px 20px 30px 0px #00000026;
         }
         .emerging-leaders h2{
             margin: 0px;
@@ -1444,8 +1750,11 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         content: '';
         right: -40px;
         z-index: 0;
-        box-shadow: 0px -13px 20px 0px #00000026;
-        transform: rotate(171deg);
+        -webkit-box-shadow: 0px -13px 20px 0px #00000026;
+                box-shadow: 0px -13px 20px 0px #00000026;
+        -webkit-transform: rotate(171deg);
+            -ms-transform: rotate(171deg);
+                transform: rotate(171deg);
         top: 0px;
     }
     .fe-block-yui_3_17_2_1_1754228139994_2917 p{
@@ -1454,7 +1763,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
    .fe-block-yui_3_17_2_1_1754228139994_3373 a {
         border-radius: 50px !important;
         background: #FEC671 !important;
-        box-shadow: 3.24px 6.49px 20.27px 0px #00000026;
+        -webkit-box-shadow: 3.24px 6.49px 20.27px 0px #00000026;
+                box-shadow: 3.24px 6.49px 20.27px 0px #00000026;
         color: #2A2118 !important;
         font-size: 22px !important;
         padding: 15px !important;
@@ -1468,7 +1778,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         font-size:28px;
     }
     .fe-block-yui_3_17_2_1_1754199654218_2948 .sqs-block-html{
-        box-shadow: -10px 20px 20px 0px #0000001A !important;
+        -webkit-box-shadow: -10px 20px 20px 0px #0000001A !important;
+                box-shadow: -10px 20px 20px 0px #0000001A !important;
     }
     .fe-block-8e290b854c445d228ebc h4{
         font-size:34px;
@@ -1481,19 +1792,27 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         margin-top:-15px!important;
     }
     .text-card-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 30px;
     }
     .sq-d-grid{
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 1fr 20px 1fr;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
     }
     .text-box-element{
         color: #000;
         font-size: 19px;
-        box-shadow: -10px 20px 20px 0px #0000001A;
+        -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+                box-shadow: -10px 20px 20px 0px #0000001A;
         border-radius: 30px;
         padding: 30px;
     }
@@ -1526,13 +1845,18 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     .shaping-national-wrap{
        background:#E8E5DA;
-       box-shadow: 0px 20px 20px 0px #0000001A;
+       -webkit-box-shadow: 0px 20px 20px 0px #0000001A;
+               box-shadow: 0px 20px 20px 0px #0000001A;
        
     }
     .shaping-national-wrap{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
         border-radius: 30px;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
       .shaping-national-left {
         width: 45%;
@@ -1557,7 +1881,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     .lets-talk-card {
         max-width: 440px;
         background: #FEC671;
-        box-shadow: -10px 20px 20px 0px #0000001A;
+        -webkit-box-shadow: -10px 20px 20px 0px #0000001A;
+                box-shadow: -10px 20px 20px 0px #0000001A;
         padding: 30px;
         border-radius: 30px;
         color: #000;
@@ -1605,19 +1930,25 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1050;
+    z-index: 9999999;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 		overflow-y:auto;
     outline: 0;
     background: #6f6f6f6b;
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
 	display: none;
+	 -webkit-transform: translateZ(0); /* Forces GPU layer on iOS */
 }
 .custom-modal-wraper .modal-dialog{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: calc(100% - 4rem);
     margin:8rem auto 2em auto;
 }
@@ -1634,8 +1965,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 
 .custom-modal-wraper .modal-content {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     pointer-events: auto;
     background-color: #FCFBF4;
@@ -1644,9 +1980,12 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     outline: 0;
     padding: 40px 40px 40px 40px;
     border: 1px solid #000000;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .custom-modal-wraper .modal-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     right: 20px;
@@ -1664,19 +2003,30 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 }
 
 .custom-modal-wraper .modal-d-flex{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		gap: 30px;
 	}
 .custom-modal-wraper .modal-d-flex.align-item-center{
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .custom-modal-wraper .mw-6{
 	width: 50%;
 	}
 .custom-modal-wraper .mw-6.content-wraper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
 }
 
 .custom-modal-wraper .mw-3{
@@ -1690,9 +2040,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 		width: 60%;
 	}
 .custom-modal-wraper .m-image-box{
+		display:-webkit-box;
+		display:-ms-flexbox;
 		display:flex;
 	    gap: 30px;
-	    align-items: center;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
 	    padding-bottom:10px;
 	}
 .custom-modal-wraper .m-image-box .profile-img{
@@ -1745,9 +2099,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         text-decoration: none;
 	}
 .custom-modal-wraper .mp-buttons{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	    gap: 20px;
-	    align-items: center;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
 	}
 .custom-modal-wraper .mp-buttons a{
 		display: block;
@@ -1772,9 +2130,16 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     margin-top:25px;
 }
 .text-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	height: 100%;
     gap: 10px;
 }
@@ -1782,7 +2147,9 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 	padding-top: 15px;
 }
 .modal-footer-part{
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 #back-to-top-button {
     display: inline-block;
@@ -1792,16 +2159,28 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     position: fixed;
     bottom: 30px;
     right: 30px;
+    -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+    -o-transition: background-color .3s, opacity .5s, visibility .5s;
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-    box-shadow: 0px 20px 30px 0px #0000001A;
+    -webkit-box-shadow: 0px 20px 30px 0px #0000001A;
+            box-shadow: 0px 20px 30px 0px #0000001A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 10px;
     border-radius: 50%;
     font-size: 16px;
@@ -1822,14 +2201,21 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     
        #lets-begin-section .fluid-engine {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 35px 30px;
         width: 90%;
         background: #494237;
         margin-left: 10%;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         z-index:999;
     }
     #lets-begin-section .content-wrapper{
@@ -1844,8 +2230,11 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     	content: '';
     	left: -10%;
     	z-index: 0;
-    	box-shadow: 0px 15px 20px 0px #00000026;
-    	transform: rotate(172deg);
+    	-webkit-box-shadow: 0px 15px 20px 0px #00000026;
+    	        box-shadow: 0px 15px 20px 0px #00000026;
+    	-webkit-transform: rotate(172deg);
+    	    -ms-transform: rotate(172deg);
+    	        transform: rotate(172deg);
     	bottom: 0px;
     }
 
@@ -1876,12 +2265,18 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             
         }
         .fe-block-yui_3_17_2_1_1752808872002_3996, .fe-block-ab54cbf0a300958c1d06{
+            -ms-grid-row: 2 !important;
+            -ms-grid-row-span: 2 !important;
+            -ms-grid-column: 16 !important;
+            -ms-grid-column-span: 12 !important;
             grid-area: 2 / 16 / 4 / 28 !important;
             z-index: 2;
         }
         
         #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before {
-            transform: rotate(169deg);
+            -webkit-transform: rotate(169deg);
+                -ms-transform: rotate(169deg);
+                    transform: rotate(169deg);
         }
     }
     @media (max-width:1366px) {
@@ -1916,6 +2311,10 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             font-size:24px;
         }
        .fe-block-yui_3_17_2_1_1752808872002_3996 {
+            -ms-grid-row: 2 !important;
+            -ms-grid-row-span: 3 !important;
+            -ms-grid-column: 17 !important;
+            -ms-grid-column-span: 9 !important;
             grid-area: 2 / 17 / 5 / 26 !important;
             z-index: 2;
         }
@@ -1968,7 +2367,9 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         padding-right: 180px;
     }
     #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before{
-        transform: rotate(161deg);
+        -webkit-transform: rotate(161deg);
+            -ms-transform: rotate(161deg);
+                transform: rotate(161deg);
     }
  }
  
@@ -2016,10 +2417,12 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         }
         .how-can-help .left-title h2{
             font-size:28px !important;
+            margin:0px !important;
         }
         .line-shape .left-title p {
             font-size: 14px;
             white-space: normal;
+            margin:0px !important;
         }
         .sq-heading-style h2 {
             font-size: 28px !important;
@@ -2040,7 +2443,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             font-size:32px !important;
         }
         #about-me-section:before{
-            height:175px;
+            height:230px;
         }
         .work-with-section .icon{
             width:100px;
@@ -2074,9 +2477,17 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
            font-size: 18px;
         }
         .fe-block-yui_3_17_2_1_1752808872002_3996 {
+            -ms-grid-row: 2 !important;
+            -ms-grid-row-span: 3 !important;
+            -ms-grid-column: 17 !important;
+            -ms-grid-column-span: 23 !important;
             grid-area: 2 / 17 / 5 / 40 !important;
         }
         .fe-block-yui_3_17_2_1_1752808872002_3619{
+            -ms-grid-row: 2 !important;
+            -ms-grid-row-span: 2 !important;
+            -ms-grid-column: 4 !important;
+            -ms-grid-column-span: 36 !important;
             grid-area: 2 / 4 / 4 / 40 !important;
         }
         .react-form-contents .form-submit-button{
@@ -2084,6 +2495,9 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         }
         .custom-modal-wraper .m-image-box .profile-img {
             width: 80px;
+        }
+        .custom-modal-wraper .m-image-box .profile-img img{
+            width:80px;
         }
         .custom-modal-wraper .m-image-box .profile-name{
             font-size:24px; 
@@ -2165,7 +2579,6 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         
        .conversation-s-text {
             width: 100%;
-            margin-top: -2px;
         }
      }
     @media (max-width:991px) {
@@ -2198,15 +2611,28 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             position:relative;
         }
         .conversations-top-box {
-        	flex-wrap: wrap;
-        	flex-direction: column-reverse;
+        	-ms-flex-wrap: wrap;
+        	    flex-wrap: wrap;
+        	-webkit-box-orient: vertical;
+        	-webkit-box-direction: reverse;
+        	    -ms-flex-direction: column-reverse;
+        	        flex-direction: column-reverse;
         }
-        .conversation-top-image {
+        
+        .conversation-top-image, .conversation-s-text{
         	width: 100%;
         }
-        .conversation-s-text {
+        .conversation-top-image.desktop {
         	width: 100%;
-        	margin-top: -2px;
+        	display:none;
+        }
+        .conversation-s-text.desktop {
+        	width: 100%;
+        	display:none;
+        }
+        .conversation-s-text.mobile{
+            display:block;
+            margin-top:0px;
         }
         .our-conversations-wrap {
         	font-size: 16px;
@@ -2219,6 +2645,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         .line-shape .left-title{
             position: relative;
             top:0px;
+            left:0px;
         }
         .custom-modal-wraper .leadership-button {
             padding: 15px 15px;
@@ -2228,7 +2655,10 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             font-size: 13px;
         }
        .how-can-help{
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
        }
        /*===========================*/
       
@@ -2241,9 +2671,15 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
        }
        .lines{
         width:100%;
-        flex-direction: unset;
-        flex-wrap: wrap;
-        justify-content: center;
+        -webkit-box-orient: unset;
+        -webkit-box-direction: unset;
+            -ms-flex-direction: unset;
+                flex-direction: unset;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding-bottom: 200px;
        }
        .bubble {
@@ -2252,21 +2688,28 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             max-width: none;
             height: auto;
             width: 100%;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .bubble-desc {
-            clip-path: polygon(12% 0, 88% 0, 100% 100%, 0% 100%) !important;
+            -webkit-clip-path: polygon(12% 0, 88% 0, 100% 100%, 0% 100%) !important;
+                    clip-path: polygon(12% 0, 88% 0, 100% 100%, 0% 100%) !important;
             height: 100%;
             margin: 0px;
             width: 100%;
             padding: 20px 50px;
             text-align: center;
+            background: -o-linear-gradient(265deg, #FEC671 -21.4%, rgb(218 228 237 / 76%) 100%);
             background: linear-gradient(185deg, #FEC671 -21.4%, rgb(218 228 237 / 76%) 100%);
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
        .line-connector{
             width:45%;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
         .bubble-title {
             font-size: 20px;
@@ -2337,10 +2780,33 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
     
     @media (max-width:767px) {
+        .describe-outer-section h4{
+            font-size:18px;
+        }
+        .d-supheading {
+            margin-bottom: 20px;
+        }
+        .custom-modal-wraper .m-image-box .profile-name {
+            font-size: 20px;
+        }
+        
+        .custom-modal-wraper .m-image-box{
+            gap:10px;
+        }
+        .custom-modal-wraper .modal-content{
+            padding:20px;
+        }
+        .custom-modal-wraper .m-image-box .profile-img {
+            width: 60px;
+        }
+        .custom-modal-wraper .m-image-box .profile-img img {
+            width: 60px;
+        }
         .conversation-image {
             width: 70%;
         }
         .roles-describe-section {
+            -ms-grid-columns: (1fr)[1];
             grid-template-columns: repeat(1, 1fr);
         }
         .roles-describe-section .icon {
@@ -2359,7 +2825,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             height:400px;
         }
         .custom-modal-wraper .modal-d-flex{
-            flex-wrap:wrap;
+            -ms-flex-wrap:wrap;
+                flex-wrap:wrap;
         }
         .mw-4, .mw-8, .mw-9, .mw-3{
             width:100% !important;
@@ -2413,7 +2880,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         
         .bubble {
             height: 100px;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .bubble-title {
             font-size: 18px;
@@ -2424,11 +2892,14 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         .card-footer {
             max-width: none;
             width: 100%;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .sq-heading-style h2 {
             font-size: 24px !important;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            margin-left:20px;
         }
         .sq-heading-style.before h2:after{
             left:-20px;
@@ -2443,18 +2914,24 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         }
         
         .boundary-card-container{
-            flex-wrap:wrap;
+            -ms-flex-wrap:wrap;
+                flex-wrap:wrap;
         }
         .boundary-card, .boundary-card.w-4{
             width:47%;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
         }
         .introvert-sq-d-gird {
+            -ms-grid-columns: 1fr 10px 1fr;
             grid-template-columns: repeat(2, 1fr);
             gap:10px;
         }
         .emerging-leaders-card{
-            flex-direction: column-reverse;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
             padding:30px;
         }
         .emerging-content, .emerging-image{
@@ -2480,14 +2957,21 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     
         #lets-begin-section .content:after {
             height: 80px;
-            transform: rotate(167deg);
+            -webkit-transform: rotate(167deg);
+                -ms-transform: rotate(167deg);
+                    transform: rotate(167deg);
             bottom: 0px;
         }
         #lets-begin-section .fluid-engine{
             margin-left:0%;
             width:100%;
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
         }
          #lets-begin-section .fe-block:first-child,  #lets-begin-section .fe-block:last-child {
             width: 100% !important;
@@ -2500,7 +2984,9 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
             padding: 80px 0px !important;
         }
         #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before {
-            transform: rotate(164deg);
+            -webkit-transform: rotate(164deg);
+                -ms-transform: rotate(164deg);
+                    transform: rotate(164deg);
             height:80px;
         width: 100%;
         }
@@ -2528,7 +3014,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         }
         .testimonial-slider .thumbs-swiper, .testimonial-slider .thumbs-swiperfl {
             padding: 0px 36px;
-            max-width: 330px;
+            max-width: 00px;
         }
          #entrepreneur h4, #managers h4, #adult h4, #thinker h4{
             font-size:16px;
@@ -2547,7 +3033,13 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
 
  @media (max-width:575px) {
-  .leadership-card {
+     .roles-describe-section .card{
+         padding:10px;
+     }
+     .roles-describe-section{
+         gap:10px;
+     }
+    .leadership-card {
         min-height:400px;
         height: 100%;
         padding-bottom: 60px !important;
@@ -2556,14 +3048,22 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         font-size: 10px;
     }
     .lines {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
    .line-connector {
         width: 100%;
     }
     .fe-6879c0636b2a577e106967b3{
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 50px;
     }
     #lets-begin-section .fluid-engine h3 {
@@ -2575,9 +3075,11 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
     }
      .boundary-card, .boundary-card.w-4{
         width:100%;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
     .introvert-sq-d-gird {
+            -ms-grid-columns: 1fr;
             grid-template-columns: repeat(1, 1fr);
     }
    .leadership-card h3 {
@@ -2595,13 +3097,20 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         padding: 20px 0px;
     }
    #collection-6875fe55bcbd23389d324471 #lets-begin-section .content:before, #collection-688c33b4ea8251491b1d8a70 #lets-begin-section .content:before {
-        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+            -ms-transform: rotate(160deg);
+                transform: rotate(160deg);
         height: 80px;
         width: 110%;
     }
     .custom-modal-wraper .mp-buttons{
-        align-items: baseline;
-        flex-direction: column;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
  }
@@ -2614,7 +3123,8 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
         width:100%;
     }
     .light-card-details {
-        clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
     }
     .conversation-land-grid.d-flex .conversation-land-box {
         width: 100%;
@@ -2623,5 +3133,11 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
  @media (max-width:375px) {
     .light-card-details {
         font-size: 14px;
+    }
+    .leadership-card.muscles {
+        padding: 20px 10px 20px 10px;
+    }
+    .leadership-card.compass {
+        padding: 20px 20px 20px 10px;
     }
 }

@@ -289,7 +289,7 @@ body.scrollbar-hidden::-webkit-scrollbar-thumb:hover {
          margin-top:10px;
      }
      .custom-modal-wraper .modal-d-flex{
-         gap:0px;
+         gap:20px;
          
      }
   .react-form-contents .field-list .form-item {
@@ -339,17 +339,15 @@ body.scrollbar-hidden::-webkit-scrollbar-thumb:hover {
     }
     .fe-block-yui_3_17_2_1_1753851657737_3774 p, .fe-block-fb7460279fcb61742e32 p {
     	padding-right: 0;
-    	text-align: center;
     	margin-top: 10px !important;
-    	font-size: 17px !important;
+    	font-size: 16px !important;
     	padding: 0 10px;
     }
     #yui_3_17_2_1_1754971791843_100 img{
         display: none !important;
     }
     #block-yui_3_17_2_1_1753851657737_3284 p {
-    	text-align: center !important;
-    	font-size: 17px;
+    	font-size: 16px;
     }
     #our-conversations-section{
         margin-bottom: -80px !important;
@@ -426,6 +424,10 @@ body.scrollbar-hidden::-webkit-scrollbar-thumb:hover {
     	height: 90px;
     	bottom: 0;
     }
+    .sq-heading-style.before img {
+        margin-bottom: -15px;
+        margin-left: 3px;
+    }
 }
 
 @media (max-width:575px) {
@@ -438,6 +440,11 @@ body.scrollbar-hidden::-webkit-scrollbar-thumb:hover {
     }
     #lets-begin-section .fluid-engine p {
         font-size: 14px;
+    }
+    .sq-heading-style h2 {
+        font-size: 20px !important;
+        box-sizing: border-box;
+        margin-left: 8px;
     }
 }
 
