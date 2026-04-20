@@ -198,7 +198,7 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
 ====================================*/
 .describe-outer-section h4{
     text-align: center;
-    color: #fff;
+    color: red;
     margin: 0px auto !important;
     max-width:1024px;
 }
