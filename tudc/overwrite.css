@@ -93,6 +93,7 @@ body.modal-overflow{
   background-clip: text;
   color: transparent;
   font-size:115px;
+	font-weight: 700;
 } 
 
 /*#how-can-help-secton.hide, #real-transformation-section.hide{*/
