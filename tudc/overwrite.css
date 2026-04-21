@@ -192,6 +192,12 @@ background-image: url(https://static1.squarespace.com/static/6875fe54bcbd23389d3
       padding-bottom:300px !important;
 
 }
+
+#unorthodox-coach-section h2 em{
+	font-style: italic;
+	color: #fff;
+	font-size: 72px;
+}
  
 /*===================================
 *roles Describe
