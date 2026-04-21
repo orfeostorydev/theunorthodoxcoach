@@ -10,19 +10,20 @@
 }
 
 .light-animation img {
-    -webkit-transform: scale(.3);
-        -ms-transform: scale(.3);
-            transform: scale(.3);
-    left: -35px;
-    top: 55px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    -webkit-transform-origin: top;
-        -ms-transform-origin: top;
-            transform-origin: top;
-    position: absolute;
-} 
+	-webkit-transform: scale(.3);
+	-ms-transform: scale(.3);
+	transform: scale(.3);
+	left: -5px;
+	top: -106px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	-webkit-transform-origin: top;
+	-ms-transform-origin: top;
+	transform-origin: top;
+	position: absolute;
+	width: 400px;
+}
 .light-active  .light-animation img{
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
